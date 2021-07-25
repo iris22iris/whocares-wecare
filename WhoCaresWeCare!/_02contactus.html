@@ -98,22 +98,50 @@
                     </div>
                     <!-- description end -->
                     <!-- submit&upload start -->
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                         <button type="submit" class="btn ">送出表單</button>
-                    </div>
+                    </div> -->
                     
-                    <div class="col-3">
-                        <button type="submit" class="btn ">上傳檔案</button>
-                        
-                    </div>
-                    <div class="col-3">
-                        
-                        <input type="file" id="input" multiple="true" onchange="handleFiles(this.files)">
-                    </div>
-                    
-                    
-                    
-                    <!-- submit&upload end-->
+                    <button type="button" class="btn col-3 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      送出表單
+                  </button>
+                  
+                  <!-- 是否取消已追蹤商品項目彈出視窗 -->
+                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">通知</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                          表單送出成功
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">否</button>
+                          <button type="button" class="btn btn-primary">是</button>
+                          </div>
+                      </div>
+                      </div>
+                  </div> 
+
+
+                  <!-- fileupload start -->
+                  <div class="col-3">
+                      <button type="submit" class="btn ">上傳檔案</button>
+                      
+                  </div>
+                  <!-- fileupload end -->
+
+                  
+                  <div class="col-3">
+                      
+                      <input type="file" id="input" multiple="true" onchange="handleFiles(this.files)">
+                  </div>
+                  
+                  
+                  
+                  <!-- submit&upload end-->
                     
                 </form>
                 <!-- form end -->
