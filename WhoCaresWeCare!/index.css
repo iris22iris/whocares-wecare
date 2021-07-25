@@ -97,7 +97,7 @@
 
 #newsContent{
     font-size: 20px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-family: mainfont-light;
     align-items: center;
     padding: 5px 15px;
@@ -135,24 +135,40 @@
 .footer{
     background:rgb(115,99,87);
     width: 100%;
-    height: 100px;
     color:white;
     display: flex;
     flex-wrap: wrap;
 }
 
 #left-footer{
-    width: 30%;
+    width: 50%;
     
 }
 
 #right-footer{
-    width: 70%;
+    width: 50%;
     
 }
 
+.list-inline-item{
+    font-size: 30px;
+}
 
+.copyright{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
 
+.row dt{
+    font-family: mainfont-regular;
+    letter-spacing: 1.5px;
+}
 
-
-
+.row dd{
+    font-family: mainfont-light;
+    letter-spacing: 0.5px;
+    }
