@@ -1,0 +1,124 @@
+.html {
+    height: 100%;
+}
+
+.body {
+    background: rgb(250, 246, 243);
+    background-image: url(../image/background.jpg);
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.lv1 {
+    height: 70px;
+    /* background-color: red; */
+    width: 100%;
+
+}
+
+.hr {
+    border: 2px solid #000000;
+}
+
+.lv2 {
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.lv3 {
+    height: 1500px;
+    width: 200px;
+    /* background-color: springgreen; */
+
+}
+
+.lv4 {
+    display: flex;
+    margin-right: 200px;
+    /* background-color: seagreen; */
+    width: 100%;
+}
+
+.lv5 {
+    height: 300px;
+    width: 350px;
+    margin-left: 100px;
+    flex-direction: column;
+    /* background-color: tomato; */
+}
+
+.img1,
+.img2,
+.img3 {
+    height: 300px;
+    width: 350px;
+}
+
+.lv6 {
+    margin-left: 100px;
+    height: 250px;
+
+}
+
+/* 數量調整 */
+input[type="number"] {
+    width: 80px;
+    height: 20px;
+    background-color: turquoise;
+    text-align: right;
+}
+
+label {
+    margin-bottom: 2px;
+}
+
+/* 小圖片 */
+input {
+    width: 50px;
+    height: 30px;
+    margin: 13px 30px 30px 30px;
+}
+
+.hr1 {
+    color: red;
+    border: 5px solid;
+    width: 300%;
+}
+
+.lv7 {
+    height: 500px;
+    /* background-color: lightblue; */
+    width: 300%;
+    border: 1px solid rgb(60%, 60%, 60%);
+    background-color: #e9c46a;
+
+}
+
+/* lv1 大頭照 */
+.imgTop {
+    margin: 10px 0px 0px 295px;
+    width: 50px;
+    height: 50px;
+}
+
+/* lv8 大頭照 */
+.imgMid {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.selectFun1,
+.selectFun2,
+.selectFun3,
+.selectFun4 {
+    margin: 20px 0px 120px 30px;
+}
+
+.word {
+    word-break: break-all;
+    font-size: 1.3rem;
+}
