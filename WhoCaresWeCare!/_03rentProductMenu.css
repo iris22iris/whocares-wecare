@@ -27,31 +27,45 @@
     background-attachment: fixed;
 }
 
-
-
-
-
-/* ------main-header------- */
-
-#logo{
-    width: 85%;
+/* --------footer------ */
+.footer{
+    background:rgb(115,99,87);
+    width: 100%;
+    color:white;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
 }
-.navbar{
-    background: #412e11;
-    height: 100px;
-}
-.textSize{
-    font-size: 22px;
 
+#left-footer{
+    width: 50%;
+    
 }
-.navbar-nav{
+
+#right-footer{
+    width: 50%;
+    
+}
+
+.list-inline-item{
+    font-size: 30px;
+}
+
+.copyright{
+    color: white;
+    font-size: 16px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
 }
-.left-menu{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
+
+.row dt{
+    font-family: mainfont-regular;
+    letter-spacing: 1.5px;
 }
+
+.row dd{
+    font-family: mainfont-light;
+    letter-spacing: 0.5px;
+    }
+

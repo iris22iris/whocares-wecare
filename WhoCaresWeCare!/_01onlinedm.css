@@ -31,11 +31,10 @@
 /* ------midlecontent------- */
 .midlecontent{
     margin: 0 auto;
-    height: 80vh;
 }
 /* ------side-menu------- */
 .side-menu{
-    height: 80vh;
+    ;
     border-right: black dotted ;
     border-width: 0.25rem;
 }
@@ -45,7 +44,6 @@
 
 /* ------mainborder------- */
 .mainborder{
-   
     border:black solid ;
 }
 /* ------.title------- */
@@ -67,3 +65,44 @@
 }
 
 
+/* --------footer------ */
+.footer{
+    background:rgb(115,99,87);
+    width: 100%;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left-footer{
+    width: 50%;
+    
+}
+
+#right-footer{
+    width: 50%;
+    
+}
+
+.list-inline-item{
+    font-size: 30px;
+}
+
+.copyright{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.row dt{
+    font-family: mainfont-regular;
+    letter-spacing: 1.5px;
+}
+
+.row dd{
+    font-family: mainfont-light;
+    letter-spacing: 0.5px;
+    }
