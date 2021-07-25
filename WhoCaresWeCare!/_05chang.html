@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Contactus</title>
+    <link rel="stylesheet" href="_05chang.css">
+     <title>index</title>   
+     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+
+<body class="index">
+    
+<iframe src="index.html" frameborder="0"
+    width="100%"
+    height="100px"
+    scrolling= "no"
+></iframe>
+  
+
+ <div class="changmtitle col-6 text-center  ">
+            
+                <h1>會員資料修改</h1>
+
+            
+        </div>
+        
+
+    <div class="main container p-3 col-12 justify-content-center text-center ">
+      
+        <div class=" col-3 p-3  ">
+                
+                <div class="col-12  d-flex justify-content-center align-items-center ">
+                    <a href="#" class="cuspic">
+                    <img src="https://picsum.photos/200/200" alt='cuspic'>
+                </a>
+                </div>
+
+                <div class="button  col-12 p-3 ">
+          
+                   <div class="col-6">
+                        
+                        <input type="file" id="input" multiple="true" onchange="handleFiles(this.files)">
+                    </div>
+
+                    <div class="col-12">
+                       <div class="col-12 p-3">  
+                           <button type="submit"  class="btn" >上傳圖片</button>
+                        <button type="submit" class="btn"  >清除</button>
+                        </div>
+                       
+                </div>
+                
+               
+                
+
+
+                    
+                </div>
+        </div>
+
+        
+        
+        <div class=" col-9 p-3">
+          
+
+            <div class="col-9  p-3 d-flex justify-content-center align-items-center">
+                <form class="row g-3">
+                    
+                    <div class="col-3 ">
+                        <label for="inputname" class="form-label" >會員姓名:</label> 
+                    </div>
+                    <div class="col-9 ">
+                        <input type="text"  class="form-control" id="inputname">
+                    </div>
+                 
+                    <div class="col-3">
+                        <label for="inputothername" class="form-label">會員暱稱:</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="form-control" id="inputothername">
+                    </div>
+                    
+                    <div class="col-3">
+                        <label for="inputID" class="form-label">身分證字號:</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="form-control" id="inputID">
+                    </div>
+
+
+                    <div class="col-3">
+                    <label>性別:</label>
+                    </div>
+
+
+                <div class="col-9 ">
+                    <label><input type="radio" name="gender" value="male">男</label>
+                    <label><input type="radio" name="gender" value="female">女</label>
+                    <label><input type="radio" name="gender" value="multiple">多元</label>
+                    <label><input type="radio" name="gender" value="no">無</label><br>
+
+
+                </div>
+
+
+                <div class="col-3">
+                    <label for="inputphone" class="form-label">聯絡電話:</label>
+                </div>
+                <div class="col-9">
+                    <input type="text" class="form-control" id="inputphone">
+                </div>
+
+                <div class="col-3">
+                    <label for="inputemail" class="form-label">EMAIL:</label>
+                </div>
+                <div class="col-9" >
+                    <input type="text" class="form-control" size="50" id="inputemail">
+                </div>
+
+                
+
+
+                <div class="col-3">
+                    <label for="inputcity" class="form-label">居住城市:</label>
+                </div>
+                <div class="col-9">
+
+                    <select id="inputcity" class="form-select" name="city">
+                        <option value="台北">台北</option>
+                        <option value="新北">新北</option>
+                    </select>
+                </div>
+
+                
+
+
+
+
+                <div class="col-3">
+                    <label for="inputaddress" class="form-label">居住地址:</label>
+                </div>
+                <div class="col-9">
+                    <input type="text" class="form-control" size="50" id="inputaddress">
+                </div>
+
+                <div class="col-3">
+                    <label for="inputbirthday" class="form-label">出生(西元):</label>
+                </div>
+                <div class="col-9">
+                <input type="text" class="form-control" id="inputbirthday">
+                </div>
+            
+            
+            </form>
+            </div>
+
+
+
+                <div class="col-7 p-1  d-flex justify-content-center align-items-center">
+
+                    <div class="col-4  ">
+                        <button type="submit" class="btn ">確認修改</button>
+                    </div>
+                
+                    <div class="col-3">
+                        <button type="submit" class="btn ">取消</button>
+                    
+                    </div>
+
+                </div>
+
+           
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        </div>       
+    </div> 
+   
+</body>
+</html>
