@@ -1,17 +1,33 @@
 
+/* --------全域設定------ */
 *{
     margin: 0 ;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    font-family: mainfont-medium;
+       
+}
+
+/* 源泉圓體字型命名!! */
+@font-face {
+    font-family: mainfont-medium;
+    src: url(../fonts/GenSenMaruGothicTW-Medium.ttf);
+}
+@font-face {
+    font-family: mainfont-light;
+    src: url(../fonts/GenSenMaruGothicTW-Light.ttf);
+}
+@font-face {
+    font-family: mainfont-regular;
+    src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
+}
+
+#body{
+    background: rgb(250, 246, 243);
     background-image: url(../image/background.jpg);
     background-attachment: fixed;
-
 }
 
-
-html,body{
-    height: 100%;
-}
 
 .main{
     /* margin: 0 auto; */
@@ -21,7 +37,7 @@ html,body{
    
 }
 
-   
+/* ------side-menu------- */
 
 .side-menu{
     height: 100%;
@@ -31,8 +47,12 @@ html,body{
 .side-menu .button{
     height: 5rem;
 }
-
-
+/* ------title------- */
+.title{
+    color:  rgb(117,76,36);
+  
+}
+/* ------mainborder------- */
 .mainborder{
    
     border:black solid ;
