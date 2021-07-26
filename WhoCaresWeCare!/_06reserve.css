@@ -2,12 +2,13 @@
     height: 100%;
 }
 
-.body {
+#body {
     background: rgb(250, 246, 243);
     background-image: url(../image/background.jpg);
     background-attachment: fixed;
     height: 100%;
 }
+
 
 .lv1 {
     height: 70px;
