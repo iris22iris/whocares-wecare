@@ -57,15 +57,40 @@
             <div class="col-12 list  d-flex justify-content-center align-items-center flex-wrap">
                 <form class="row col-12 ">
                     
-                    <!-- heart&img start -->
-                    <div class="col-12 col-sm-12 col-md-4  d-flex ">
-                        <div class="col-6 d-flex justify-content-center align-items-center">
+                       <!-- heart&img start -->
+                       <div class="col-12 col-sm-12 col-md-4  d-flex ">
+                        <!-- heart start -->
+                        
+                        <!-- 取消已追蹤商品項目 -->
+                        <button type="button" class="btn col-6 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="fas fa-heart"></i>
-                        </div>
+                        </button>
+                        
+                        <!-- 是否取消已追蹤商品項目彈出視窗 -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">通知</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                是否刪除這個項目
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">否</button>
+                                <button type="button" class="btn btn-primary">是</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div> 
+                        <!-- heart end -->
+
+                        <!-- img start -->
                         <div class="col-6 d-flex justify-content-center align-items-center">
-                    <img src="../image/product/A0001.jpg" alt="">
-                            
+                            <img src="../image/product/A0001.jpg" alt="">
                         </div>
+                        <!-- img end -->
                     </div>
                     <!-- heart&img end -->
                     
@@ -81,9 +106,7 @@
                         <div class="col-6 d-flex justify-content-center align-items-center">900元</div>
                         <div class="col-6 d-flex justify-content-center align-items-center"><i class="fas fa-cart-plus"></i></div>
                     </div>
-                    
                     <!-- price&cart end -->
-                   
                     
                 </form>
                 <!-- form end -->
@@ -92,7 +115,6 @@
                     <button type="button" class="btn btn-primary ">去逛逛</button>
                 </div>
                 <!-- goshoppingbutton end -->
-             
 
             </div>
             <!-- list end -->
