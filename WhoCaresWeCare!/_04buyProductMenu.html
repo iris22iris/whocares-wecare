@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- <link rel="stylesheet" href="index.css"> -->
-  <link rel="stylesheet" href="_04buyProductMenu.css">
+  <link rel="stylesheet" href="./_04buyProductMenu.css">
   <title>購物商城</title>
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,43 +21,42 @@
 
   <!-- Main Start -->
 
-      <!-- Slider-img Start -->
-      <div class="container-fluid d-flex justify-content-center">
-        <div id="carouselExampleInterval" class="carousel slide col-11" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <img src="../image/indexAd1.jpg" class="d-block w-100" alt="ad1">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img src="../image/indexAd2.jpg" class="d-block w-100" alt="ad2">
-            </div>
-            <div class="carousel-item">
-              <img src="../image/indexAd3.jpg" class="d-block w-100" alt="ad3">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+  <!-- Slider-img Start -->
+  <div class="container-fluid d-flex justify-content-center">
+    <div id="carouselExampleInterval" class="carousel slide col-11" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="../image/indexAd1.jpg" class="d-block w-100" alt="ad1">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="../image/indexAd2.jpg" class="d-block w-100" alt="ad2">
+        </div>
+        <div class="carousel-item">
+          <img src="../image/indexAd3.jpg" class="d-block w-100" alt="ad3">
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 
-      <!-- Slider-img End -->
+  <!-- Slider-img End -->
 
 
 
 
   <div class="row">
     <!-- Side-List Start -->
-    <div class="col-2 ms-4">
-      <img src="../image/whiteLogo.png" width="250px" height="100px">
-      <div class="text-center" style="margin-top: 1.17cm;">
+    <div class="col-2 ms-4" style="margin-top: 3cm;">
+      <div class="text-center">
         <div class="d-flex flex-wrap justify-content-center my-3" style="background-color: white;">
           <div class="sideList-title mt-3">
             <h2 class="my-2"><i class="fas fa-hand-holding-medical"></i> 輔具類</h2>
@@ -98,18 +96,17 @@
         </div>
       </div>
 
-
     </div>
     <!-- Side-List End -->
 
 
     <!-- Product Start -->
-    <div class="rentProduct col-9">
-      <div class="rentProductMenu-title">
+    <div class="buyProduct col-9">
+      <div class="buyProductMenu-title">
         <h2><i class="fas fa-th-large px-3"></i>商品列表</h2>
       </div>
       <div class="container-fluid d-flex justify-content-end">
-        <select name="rentProductSort">
+        <select name="buyProductSort">
           <option value="傳送值">價格由低至高</option>
           <option value="傳送值">數量由低至高</option>
         </select>
