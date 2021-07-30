@@ -1,7 +1,7 @@
     *,
     *::after,
     *::before {
-        margin: 0;
+        margin: 0; 
         padding: 0;
         box-sizing: border-box;
         user-select: none;
@@ -27,6 +27,7 @@
     
     body .container {
         width: 600px;
+        
     }
     
     #body{
@@ -174,10 +175,10 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 0;
+        top: 8px; /**/  
         left: 0;
-        height: 100%;
-        width: 400px;
+        height: 554px; /**/
+        width: 400px; 
         padding: 50px;
         z-index: 200;
         transition: 1.25s;
@@ -352,10 +353,10 @@
         border-radius: 18px;
         background-color: #eee;
         position: absolute;
-        bottom: -50px;
+        bottom: -50px; /*拉條上下位置*/
         left: calc( var(--puzzle-width) * 2 * -1);
         box-shadow: inset 0px 0px 12px rgba(0, 0, 0, .2);
-        border: 3px solid #ccc;
+        border: 3px solid #ccc; 
     }
     
     #handle span {
@@ -424,3 +425,8 @@
         font-family: mainfont-light;
         letter-spacing: 0.5px;
         }
+
+        .modal-content{
+            height: 530px;   
+        }
+   
