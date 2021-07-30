@@ -1,4 +1,3 @@
-
  /* --------全域設定------ */
 *{
     margin: 0 ;
@@ -7,10 +6,6 @@
     font-family: mainfont-medium;
     
 }
-
-
-
-
 
 /* 源泉圓體字型命名!! */
 @font-face {
@@ -26,31 +21,13 @@
     src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
 }
 
-#body{
+.index{
+
     background: rgb(250, 246, 243);
     background-image: url(../image/background.jpg);
-    background-attachment: fixed;
-}
 
-.accordion-body{
-    background-image: url(../image/background.jpg);
-    background: rgb(250, 246, 243);
-}
-.orditemtitle{
-
-    color: rgb(117,76,36);
-   
-    font-size: 40px;
-    size: 8px;
-  
     
 }
-.orditemtitlecontent{
-    margin-left: 100px;
-    margin-right: 100px;
-    color: rgb(115,99,87);
-}
-
 
 .header-searchcontainer{
     
@@ -61,32 +38,129 @@
     
 }
 
-.modal-body{
 
-    font-size:25px;
-   
-    
+
+
+#body{
+    background: rgb(250, 246, 243);
+    background-image: url(../image/background.jpg);
+    background-attachment: fixed;
 }
+
+.orditemtitlecontent{
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(115,99,87);
+}
+
+
+.orditemtitle{
+    color: rgb(117,76,36);
+    font-size: 40px;
+    size: 8px;
+}
+
 .main{
     /* margin: 0 auto; */
     width: 100%;
     /*height: 80vh;*/
     display: flex;
     flex-direction: column;
+}
+
+.container{
+    border-radius: 30px;
+    border:black solid ;
+
+    margin: 2em;
     
 }
 
+.itemdetail div{
+    background-image: linear-gradient(9deg,#185a9d,#43cea2);
+    
+}  
 
-.index{
-
-    background: rgb(250, 246, 243);
+.accordion-body{
     background-image: url(../image/background.jpg);
+    background: rgb(250, 246, 243);
+}
 
+.list2{
+    border:black solid ;
+}
+
+.modal-body{
+    font-size:25px;
+}
+
+
+.list{
+   width: 100%;
+   /*height: 80vh;*/
+    display: flex;
+    justify-content: center;
+    
+}
+
+.list li{
+    font-family: 'Noto Sans TC',sans-serif;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    /*background-color: #fff;*/
+    background-image: linear-gradient(9deg,#185a9d,#43cea2);
+    border-radius: 20% ;
+    position: relative;
+    font-size: 15px;
+    color:#fff;
+    align-items: center
+    
     
 }
 
 
+.list li .fa{
+    font-size: 50px;
+    margin-bottom: 6px;
+    
+    
+}
 
+.list li + li{
+    margin-left: 50px;
+    
+    
+}
+
+.list li.active~li{
+    background-image: linear-gradient(9deg,#999,#CCC);
+    
+
+}
+
+
+.list li.active ~ li::before{
+    background-color: #999;
+}
+
+
+.list li + li::before{
+    content: '';
+    position:absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #43cea2;
+    z-index: -1;
+   
+    top: 0;
+    bottom: 0;
+    left: -100px;
+    margin: auto;
+}
 
 
 /* --------footer------ */
@@ -108,6 +182,15 @@
     
 }
 
+.row dt{
+    font-family: mainfont-regular;
+    letter-spacing: 1.5px;
+}
+
+.row dd{
+    font-family: mainfont-light;
+    letter-spacing: 0.5px;
+    }
 
 .list-inline-item{
     font-size: 30px;
@@ -121,280 +204,3 @@
     align-items: flex-start;
     padding-bottom: 10px;
 }
-
-.row dt{
-    font-family: mainfont-regular;
-    letter-spacing: 1.5px;
-}
-
-.row dd{
-    font-family: mainfont-light;
-    letter-spacing: 0.5px;
-    }
-
-/*html,body{
-    height: 100%;
-}
-body{
- 
-}
-
-
-.header-search{
-    margin: 2em;
-}
-*/
-
-
-
-
-
-.container{
-    border-radius: 30px;
-    border:black solid ;
-
-    margin: 2em;
-    
-}
-
-
-
-
-.list{
-   width: 100%;
-   /*height: 80vh;*/
-    display: flex;
-    justify-content: center;
-    
-}
-
-
-
-
-.list li{
-    font-family: 'Noto Sans TC',sans-serif;   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    /*background-color: #fff;*/
-    background-image: linear-gradient(9deg,#185a9d,#43cea2);
-    border-radius: 20% ;
-    position: relative;
-    font-size: 15px;
-    color:#fff;
-    align-items: center
-    
-    
-}
-
-.list li .fa{
-    font-size: 50px;
-    margin-bottom: 6px;
-    
-    
-}
-
-.list li + li{
-    margin-left: 50px;
-    
-    
-}
-
-
-
-
-
-.list li.active~li{
-    background-image: linear-gradient(9deg,#999,#CCC);
-    
-
-}
-.list li.active ~ li::before{
-    background-color: #999;
-}
-
-
-
-
-
-.itemdetail div{
-    background-image: linear-gradient(9deg,#185a9d,#43cea2);
-    
-}    
-
-
-
-  
-
-
-
-
-.list2{
-    
-    border:black solid ;
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.list li .fa{
-    font-size: 50px;
-    margin-bottom: 6px;
-    
-}
-
-.list li + li{
-    margin-left: 50px;
-    
-}
-
-.list li + li::before{
-    content: '';
-    position:absolute;
-    width: 100px;
-    height: 5px;
-    background-color: #43cea2;
-    z-index: -1;
-   
-    top: 0;
-    bottom: 0;
-    left: -100px;
-    margin: auto;
-}
-
-.list li.active~li{
-    background-image: linear-gradient(9deg,#999,#CCC);
-
-}
-.list li.active ~ li::before{
-    background-color: #999;
-}
-
-
-
-
-
-.itemdetail div{
-    background-image: linear-gradient(9deg,#185a9d,#43cea2);
-    
-}    
-
-
-
-  
-
-
-
-
-.list2{
-    
-    border:black solid ;
-
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-/*
-#snackbar {
-
-    visibility: hidden;
-    
-    min-width: 250px;
-    
-    margin-left: -125px;
-    
-    background-color: #333;
-    
-    color: #fff;
-    
-    text-align: center;
-    
-    border-radius: 2px;
-    
-    padding: 16px;
-    
-    position: fixed;
-    
-    z-index: 1;
-    
-    left: 50%;
-    
-    bottom: 30px;
-    
-    font-size: 17px;
-    
-    }
-    
-    #snackbar.show {
-    
-    visibility: visible;
-    
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    
-    }
-    
-    @-webkit-keyframes fadein {
-    
-    from {bottom: 0; opacity: 0;}
-    
-    to {bottom: 30px; opacity: 1;}
-    
-    }
-    
-    @keyframes fadein {
-    
-    from {bottom: 0; opacity: 0;}
-    
-    to {bottom: 30px; opacity: 1;}
-    
-    }
-    
-    @-webkit-keyframes fadeout {
-    
-    from {bottom: 30px; opacity: 1;}
-    
-    to {bottom: 0; opacity: 0;}
-    
-    }
-    
-    @keyframes fadeout {
-    
-    from {bottom: 30px; opacity: 1;}
-    
-    to {bottom: 0; opacity: 0;}
-    
-    }*/
-
-
-
-
-

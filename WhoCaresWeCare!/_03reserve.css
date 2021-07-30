@@ -1,27 +1,28 @@
 /* --------全域設定------ */
-
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: mainfont-medium;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: mainfont-medium;
 }
 
 /* 源泉圓體字型命名!! */
-
 @font-face {
-    font-family: mainfont-medium;
-    src: url(../fonts/GenSenMaruGothicTW-Medium.ttf);
+	font-family: mainfont-medium;
+	src: url(../fonts/GenSenMaruGothicTW-Medium.ttf);
+}
+@font-face {
+	font-family: mainfont-light;
+	src: url(../fonts/GenSenMaruGothicTW-Light.ttf);
+}
+@font-face {
+	font-family: mainfont-regular;
+	src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
 }
 
-@font-face {
-    font-family: mainfont-light;
-    src: url(../fonts/GenSenMaruGothicTW-Light.ttf);
-}
 
-@font-face {
-    font-family: mainfont-regular;
-    src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
+.html {
+    height: 100%;
 }
 
 #body {
