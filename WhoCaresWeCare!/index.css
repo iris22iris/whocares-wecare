@@ -23,7 +23,7 @@
 
 #body{
     background: rgb(250, 246, 243);
-    background-image: url(../image/background.jpg);
+    background-image: url(../image/background1.jpg);
     background-attachment: fixed;
 }
 
@@ -75,7 +75,8 @@
 .newsAndProduct-Head{
     padding-top: 50px;
     font-family: mainfont-medium;
-    color: rgb(117,76,36);
+    color: white;
+    border-bottom: ridge 5px white;
    
 }
 
@@ -83,11 +84,11 @@
   width: 30%;
   flex-wrap: nowrap;
   align-content: center;
-  color: rgb(115,99,87);
+  color: white;
 }
 
 .line{
-    color:rgb(201, 139, 24);
+    color:rgb(247, 229, 214);
 }
 
 #newsHead{
@@ -100,7 +101,11 @@
     letter-spacing: 1px;
     font-family: mainfont-light;
     align-items: center;
-    padding: 5px 15px;
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    background-color: seashell;
+    color: sienna;
+    border-radius: 10px;
 }
 
 
