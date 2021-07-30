@@ -1,3 +1,4 @@
+
  /* --------全域設定------ */
  *{
     margin: 0 ;
@@ -31,9 +32,6 @@
     /* margin: 0 auto; */
     width: 100%;
     display: flex;
-
-
-   
 }
 
    
@@ -42,6 +40,17 @@
     margin-right: 50px;
 }
 
+.changmtitle{
+
+    font-size: 30px;
+    margin-left: 30px;
+
+    color: rgb(117,76,36);
+    color:rgb(201, 139, 24);
+    color:rgb(201, 139, 24);
+    
+    color: rgb(115,99,87);
+}
 
 .container{
    
