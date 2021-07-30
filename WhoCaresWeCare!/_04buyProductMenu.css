@@ -20,18 +20,21 @@
 	src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
 }
 
-#body {
+#body{
 	background: rgb(250, 246, 243);
-	background-image: url(../image/background.jpg);
+	background-image: url(../image/background4.jpg);
 	background-attachment: fixed;
 }
 
-/* --------product-title------ */
+/* --------product------ */
 .rentProductMenu-title {
 	margin-top: 30px;
 	font-family: mainfont-medium;
 	color: rgb(117, 76, 36);
+	border-bottom: inset 5px rgb(216, 196, 176);
+	margin-bottom: 10px;
 }
+
 
 /* --------sideList-title------ */
 .sideList-title {
@@ -39,7 +42,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: saddlebrown;
+	background-color: rgb(117, 76, 36);
 	color: white;
 	border-radius: 10px;
 }
