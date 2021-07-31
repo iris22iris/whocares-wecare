@@ -85,7 +85,7 @@
 .accordion-body{
     
     background-image: url(../image/background.jpg);
-    background: rgb(250, 246, 243);
+    
 }
 
 .list2{
@@ -97,6 +97,16 @@
     
 }
 
+.modal-body1{
+
+    background-image: url(../image/background0.jpg);
+}
+
+.modal-title1{
+    
+    color: rgb(117,76,36);
+    
+}
 
 .list{
    width: 100%;
