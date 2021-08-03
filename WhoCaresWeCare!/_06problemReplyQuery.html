@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="_06problemReplyQuery.css">
+      <!-- bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="index.css"></linkrel>
+        <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body id="body">
+   <!-- header start! -->
+  
+   <iframe src="index.html" frameborder="0" width="100%" height="100px" scrolling="no"></iframe>
+  
+   <!-- header End! -->
+
+     <!-- form title start-->
+     <div class="orditemtitlecontent ">
+      <div class="orditemtitle p-3 d-flex justify-content-start align-items-center">
+        <li>
+            <i class="fas fa-th-large" aria-hidden="true"></i>客服紀錄查詢
+        </li>
+
+    </div>
+      <!-- title end -->
+    <hr>
+    <br>
+    <div class=" header-searchcontainer col-12 d-flex  ">
+                                
+      <div class="  col-12 p-3  d-flex align-items-center ">
+          <form class="row g-3 align-items-center">
+              <div class="col-4 ">
+              <label class="enter ">請輸入查詢編號:</label></div>
+              <div class="col-6">
+              <input type="search" class="form-control "   id="enter"></div>
+              <div class="col-2">
+              <button type="button" class="btn btn-primary ">搜尋</button></div>
+          </form>
+      </div>
+  </div>    
+</div>      
+</div>   
+</div>
+
+<div class="main  d-flex justify-content-center align-items-center ">
+    <div class=" col-12  container p-3 d-flex justify-content-center align-items-center ">
+        <div class="itemcontainer col-12">
+            <div class="itemtitle ">
+                <form class="row g-3">
+                    
+                    <!-- account&orderno start -->
+                    <div class="col-6">
+                        <label for="inputAccount" class="form-label">會員帳號:</label>
+                        <input type="text" class="form-control" id="inputAccount" disabled="disabled" value="">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputOrderno" class="form-label">訂單編號:</label>
+                        <input type="text" class="form-control" id="inputOrderno" disabled="disabled" value="">
+                    </div>
+                    <!-- account&orderno end -->
+                    
+                    <!-- email&phone start -->
+                    <div class="col-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" disabled="disabled" value="" >
+                    </div>
+                    <div class="col-6">
+                        <label for="inputPhone" class="form-label">連絡電話</label>
+                        <input type="tel" class="form-control" id="inputPhone" disabled="disabled" value="">
+                    </div>
+                    <!-- email&phone end -->
+                     <!-- service&date start -->
+                     <div class="col-6">
+                      <label for="inputEmail" class="form-label">客服編號</label>
+                      <input type="tel" class="form-control" id="" disabled="disabled" value="">
+                  </div>
+                  <div class="col-6">
+                      <label for="inputPhone" class="form-label">表單時間</label>
+                      <input type="date" class="form-control" id="" disabled="disabled" value="">
+                  </div>
+                  <!-- service&date end -->
+                    <hr>
+                    <!-- problemtype&replytime start -->
+                    
+                    <div class="col-12 w-50 ">
+                        <label for="inputProblemtype" class="form-label">problem type:</label>
+                        <select id="inputProblemtype" class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="rent">rent</option>
+                            <option value="buy">buy</option>
+                            <option value="payment">payment</option>
+                            <option value="delivery">delivery</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- problemtypee&replytime end -->
+                   
+                    <!-- description start -->
+                    <div class="row">
+                    <div class="col-6">
+                      <label for="inputDescription" class="form-label" >問題敘述:</label>
+                      <br>
+                        <textarea name="description" id="inputDescription" cols="70" rows="10" disabled="disabled" ></textarea>
+                  </div>
+                  <!-- description end -->
+
+                  <!-- reply start -->
+                  <div class="col-6">
+                    <label for="inputDescription" class="form-label">客服回覆:</label>
+                    <br>
+                    <textarea name="description" id="inputDescription" cols="73" rows="10" disabled="disabled" ></textarea>
+                  </div>
+                </div>
+                    <!-- reply end -->
+
+                  <div class="col-12">              
+                    <input type="file" id="input" multiple="true" onchange="handleFiles(this.files)" >
+                    <div  style="text-align:right;">
+                      <span style="text-decoration:underline" style="vertical-align: text-top;">回覆日期:2021</span>
+                    </div>
+                  </div>  
+                    </div>
+</div>
+    </div>
+        </div>
+            </div>      
+
+            <div class="col-12 p-3 d-flex justify-content-center align-items-center">
+              <button type="button">返回</button>
+  </div>
+
+     <!-- footer Start! -->
+      
+     <div class="footer container-fluid">
+        <!-- left-footer -->
+        <div id="left-footer">
+          <dl class="row pt-4 pb-2 ps-4">
+            <dt class="col-sm-3 d-flex justify-content-end">
+              <i class="fas fa-map-marker-alt pe-1"></i>
+              公司地址:
+            </dt>
+            <dd class="col-sm-9">
+              台北市大安區忠孝東路三段1號
+            </dd>      
+            <dt class="col-sm-3 d-flex justify-content-end">
+              <i class="fas fa-phone pe-1"></i>
+              連絡電話:
+            </dt>
+            <dd class="col-sm-9">
+              (02) 2211-3344
+            </dd>       
+            <dt class="col-sm-3 d-flex justify-content-end">
+              <i class="far fa-smile pe-1"></i>
+              服務時段:
+            </dt>
+            <dd class="col-sm-9">
+              週一至週五(例假日除外) 9:00AM - 17:30PM
+            </dd>
+        </div>
+        <!-- right-footer -->
+        <div id="right-footer">
+          <ul class="list-inline pt-4 d-flex justify-content-start align-items-end">
+            <li class="list-inline-item px-4">
+              <i class="fab fa-facebook-square"></i>
+            </li>
+            <li class="list-inline-item px-4">
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li class="list-inline-item px-4">
+              <i class="fab fa-line"></i>
+            </li>
+          </ul>
+          <div class="copyright">
+           &nbsp;&nbsp; All Content Copyright &copy; 2021
+          </div>
+        </div>
+      </div>
+    
+    <!-- footer End! -->
+    <!-- bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+</body>
+</html>
