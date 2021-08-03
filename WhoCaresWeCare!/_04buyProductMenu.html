@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- sweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>  
 </head>
 
 <body id="body">
@@ -357,10 +359,22 @@
       function track(heart) {
         if (heart.className == "far fa-heart") {
           heart.className = "fas fa-heart";
-          alert("商品已加入追蹤清單");
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: '商品已加入追蹤清單',
+            showConfirmButton: false,
+            timer: 1000
+          })
         } else {
           heart.className = "far fa-heart";
-          alert("商品已取消追蹤");
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: '商品已取消追蹤',
+            showConfirmButton: false,
+            timer: 1000
+          })
         }
       }
     </script>
