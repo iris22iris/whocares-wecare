@@ -81,7 +81,7 @@
 }
 
 .itemdetail div{
-    background-image: linear-gradient(9deg,#185a9d,#43cea2);
+    background-image: linear-gradient(9deg,#f39700,#Ee7b1a);
     
 }  
 
@@ -129,7 +129,7 @@
     width: 100px;
     height: 100px;
     /*background-color: #fff;*/
-    background-image: linear-gradient(9deg,#185a9d,#43cea2);
+    background-image: linear-gradient(9deg,#f39700,#Ee7b1a);
     border-radius: 20% ;
     position: relative;
     font-size: 15px;
@@ -170,7 +170,7 @@
     position:absolute;
     width: 100px;
     height: 5px;
-    background-color: #43cea2;
+    background-color: #f39700;
     z-index: -1;
    
     top: 0;
