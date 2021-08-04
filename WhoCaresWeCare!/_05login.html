@@ -31,11 +31,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.zh-CN.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <style>
-        .btn {
-            margin-top: 6px;
-        }
-    </style>
+ 
 
 
 </head>
@@ -46,10 +42,12 @@
     <iframe src="index.html" frameborder="0" width="100%" height="100px" scrolling="no"></iframe>
     <!-- header End! -->
 
+    <!-- main start! -->
     <div class="main">
         <div class="container a-container" id="a-container">
+             <!-- login form start -->
             <form class="form" id="a-form" method="POST" action="">
-                <h2 class="form_title title fa-th-large px-3">登入會員</h2>
+                <h2 class="form_title title  px-3">登入會員</h2>
                 <input class="form__input" type="text" name="account" id="account" placeholder="帳號">
                 <input class="form__input" type="password" name="password" id="password" placeholder="密碼">
                 <div class="form__group">
@@ -61,9 +59,11 @@
                     登入
                   </button>
             </form>
+             <!-- login form end -->
             <!-- <div> <a class="form__link">忘記密碼了嗎?</a></div> -->
         </div>
         <div class="container b-container" id="b-container">
+            <!-- register form start -->
             <form class="form" id="b-form" method="POST" action="">
                 <h2 class="form_title title">註冊會員</h2>
                 <input class="form__input " id="name" type="text" required placeholder="姓名 ">
@@ -74,6 +74,9 @@
                 <input class="form__input " id="password" type="text" required placeholder="密碼 ">
                 <button type="submit" class="form__button button " id="button1">註冊</button>
             </form>
+             <!-- register form end -->
+             <!-- main end! -->
+             <!-- 動態框  -->
         </div>
         <div class="switch" id="switch-cnt">
             <div class="switch__circle"></div>
@@ -87,6 +90,7 @@
                 <h2 class="switch__title title">您好 !</h2>
                 <p class="switch__description description">歡迎註冊加入我們，享用更多會員功能</p>
                 <button class="switch__button button switch-btn">立即登入</button>
+                  <!-- 動態框  -->
             </div>
         </div>
     </div>
@@ -162,66 +166,10 @@
         </div>
       </div>
     <!-- footer End! -->
-
+    <!-- 註冊登入js參考網站:https://webdesignerwall.com/wdw-snippet/login-form-4 -->
     <script src="_05login.js"></script>
+    <!-- 彈跳視窗js參考網站:https://www.youtube.com/watch?v=c7kIL-bV8ac -->
+    <script src="_05login_ven.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- <body>
-    <div class="main">
-        <div class="container a-container" id="a-container">
-            <form class="form" id="a-form" method="" action="">
-                <h2 class="form_title title fa-th-large px-3">登入</h2>
-                <input class="form__input" type="text" placeholder="帳號">
-                <input class="form__input" type="password" placeholder="密碼">
-                <div class="form__group">
-                    <label>
-                     <input type="checkbox" name="remember" > 記住帳密  
-                    </label>
-                </div>
-                <a class="form__link">忘記密碼了嗎?</a>
-                <button class="form__button button">登入</button>
-            </form>
-        </div>
-        <div class="container b-container" id="b-container">
-            <form class="form" id="b-form" method="" action="">
-                <h2 class="form_title title">註冊會員</h2>
-                <input class="form__input " type="text " placeholder="姓名 ">
-                <input class="form__input " type="email " required placeholder="信箱 ">
-                <input class="form__input " type="text " placeholder="連絡電話 ">
-                <input class="form__input " type="text " placeholder="帳號 ">
-                <input class="form__input " type="text " placeholder="密碼 ">
-                <button class="form__button button submit ">立即註冊</button>
-            </form>
-        </div>
-        <div class="switch" id="switch-cnt">
-            <div class="switch__circle"></div>
-            <div class="switch__circle switch__circle--t"></div>
-            <div class="switch__container" id="switch-c1">
-                <h2 class="switch__title title">歡迎回來 !</h2>
-                <p class="switch__description description">要與我們聯繫,請您登入</p>
-                <button class="switch__button button switch-btn">立即註冊</button>
-            </div>
-            <div class="switch__container is-hidden" id="switch-c2">
-                <h2 class="switch__title title">您好 !</h2>
-                <p class="switch__description description">註冊您的個人信息,讓我們開始聯繫</p>
-                <button class="switch__button button switch-btn">立即登入</button>
-            </div>
-        </div>
-    </div>
-    <script src="main.js"></script>
-</body>
-
-</html>
-
-<script src="_05login.js"></script>
-
-</body>
-
-</html> -->
