@@ -23,7 +23,7 @@
                                 
             <div class="rentitemtitle p-3 d-flex justify-content-start align-items-center">
                 <li>
-                    <i class="fas fa-th-large" aria-hidden="true"></i>租賃設備訂單紀錄
+                    <i class="fas fa-th-large pe-2" aria-hidden="true"></i>租賃設備訂單紀錄
                 </li>
             </div>
             <hr size="8px"   >
@@ -34,21 +34,21 @@
                                 
                 <div class="  col-12 p-3  d-flex align-items-center ">
                     <form class="row g-3 align-items-center">
-                        <div class="col-4 ">
-                        <label class="enter ">請輸入查詢編號:</label></div>
-                        <div class="col-6">
+                        <div class="col-5 ">
+                        <label class="enter ">您好，請輸入訂單編號查詢:</label></div>
+                        <div class="col-5">
                         <input type="search" class="form-control "   id="enter"></div>
                         <div class="col-2">
-                        <button type="button" class="btn btn-primary ">搜尋</button></div>
+                        <button type="button" class="btn btn-warning ">確認</button></div>
                     </form>
                 </div>
             </div>    
         </div>      
 <!-- header-searchcontainer end  查詢訂單功能結束-->
         
-<!-- main star  查詢訂單表格開始-->                   
+<!-- main start  查詢訂單表格開始-->                   
         <div class="main  d-flex justify-content-center align-items-center ">
-            <div class=" col-12  container p-3 d-flex justify-content-center align-items-center ">
+            <div class=" col-12 topContainer container p-3 d-flex justify-content-center align-items-center ">
    <!-- itemcontainer  star  訂單進度條開始-->             
                 <div class="itemcontainer col-12">
                     <div class="itemtitle ">
@@ -75,7 +75,7 @@
 
     <!-- itemformlist2  star  訂單細項表頭條開始-->     
                     <div class =" itemform2  ">                                                            
-                        <ol class="itemformlist2">
+                       <!-- // <ol class="itemformlist2"> -->
                             <div class="itemcontainer2 col-12">
                                 <div class="itemtitle2 col-12 ">    
                                     <div class=" col-12   p-3 d-flex justify-content-center align-items-center ">                                                                      
@@ -101,23 +101,27 @@
      <!-- itemformlist2  end 訂單細項表頭條結束-->
      
     <!-- itemformlist3  star  訂單編號基本資訊開始-->     
-                    <div class=" itemformlist3 col-12   d-flex justify-content-center align-items-center flex-wrap">
+                    <div class=" itemformlist3  d-flex justify-content-center align-items-center flex-wrap">
                         <form class="row col-12 ">
 <!-- accordion-header-button  star  按下v按鈕會出現下拉式訂單詳細資訊 開始-->                                      
-                            <div class="col-12   d-flex ">
-                                    <h2 class="accordion-header" id="flush-heading">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        </button>
-                                    </h2>
+                            <div class="col-12   d-flex  pb-3">
+                                    <!-- <h2 class="accordion-header" "> -->
+                                       
+                                    <!-- </h2> -->
                                 <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <div class="col-4 d-flex justify-content-center align-items-center">A0000000000</div>
-                                    <div class="col-8 d-flex justify-content-center align-items-center">20210729</div>   
+                                    
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <button class="accordion-button collapsed" id="flush-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    </button>
+                                    A0000000000
+                                    </div>
+                                    <div class="col-8 ps-5 d-flex justify-content-center align-items-center">20210729</div>   
                                 </div>
                                 <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <div class="col-4 d-flex justify-content-center align-items-center">1500</div>
-                                    <div class="col-8 d-flex justify-content-center align-items-center">貨到付款</div>         
+                                    <div class="col-6 d-flex justify-content-center align-items-center">1500</div>
+                                    <div class="col-6 d-flex justify-content-center align-items-center">貨到付款</div>         
                                 </div>
-                                <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="col-4 p-2 d-flex justify-content-center align-items-center">
                                     <div class="col-12 d-flex justify-content-center align-items-center">到貨前先通話告知不然你們物流都很懶沒事先通知,我已經兩次收不到了,我就是受傷才需要輪椅阿</div>
                                 </div>                           
                             </div>
@@ -130,9 +134,9 @@
             </div>  
 
 <!-- container2  star  下拉式表格(顯示每筆訂單的詳細資訊) 開始-->
-            <div class=" col-12  container2 p-3 d-flex justify-content-center align-items-center ">
+            <div class=" col-12  container p-1 d-flex justify-content-center align-items-center ">
                                                                     
-                <div class="itemcontainer2 col-12">
+                <div class="itemcontainer2  col-12">
 <!-- itemtitle2  star  下拉式表格 開始-->                    
                     <div class="itemtitle2 col-12 ">
                         <div class="accordion accordion-flush " id="accordionFlushExample">
@@ -144,19 +148,19 @@
                                         <div class=" col-12   d-flex justify-content-center align-items-center flex-wrap">
 <!-- itemdetail  star  表格表頭 開始-->                                            
                                             <div class="row col-12  itemdetail" >
-                                                    <div class="col-3 d-flex  ">
-                                                        <div class="col-5 d-flex justify-content-center align-items-center white p-1">商品編號</div>
-                                                        <div class="col-7 d-flex justify-content-center align-items-center white p-1">商品名稱</div>
+                                                    <div class="col-4 d-flex  ">
+                                                        <div class="col-3 d-flex justify-content-center align-items-center white p-1">商品編號</div>
+                                                        <div class="col-9 d-flex justify-content-center align-items-center white p-1">商品名稱</div>
                                                                                                     
                                                     </div>
                                                                                         
-                                                    <div class="col-3 d-flex">
+                                                    <div class="col-2 d-flex">
                                                         <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃天數</div>
                                                         <div class="col-6 d-flex justify-content-center align-items-center white p-1">單價</div>
                                                     </div>
                                                     <div class="col-3 d-flex">
-                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃起讫日</div>
-                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃起讫日</div>
+                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃起始日</div>
+                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃到期日</div>
                                                     </div>
                                                     <div class="col-3 d-flex">
                                                         <div class="col-12 d-flex justify-content-center align-items-center white p-1">評價</div>
@@ -167,33 +171,36 @@
 <!-- itemdetail  end  表格表頭 結束-->
 
 <!-- list2  star  表格表頭 開始-->                                                                               
-                                        <div class="col-12 list2  d-flex justify-content-center align-items-center flex-wrap">
+                                        <div class="col-12 list2 p-2 d-flex justify-content-center align-items-center flex-wrap">
                                             <form class="row col-12 ">                                                 
-                                                <div class="col-3 d-flex ">
-                                                        <div class="col-5 d-flex justify-content-center align-items-center">
+                                                <div class="col-4 d-flex ">
+                                                        <div class="col-3 d-flex justify-content-center align-items-center">
                                                             <i class="d-flex justify-content-center align-items-center"></i>AA0001
                                                         </div>
-                                                        <div class="col-7 d-flex justify-content-center align-items-center">
+                                                        <div class="col-9 d-flex justify-content-center align-items-center">
                                                             <div class=" d-flex justify-content-center align-items-center">德國原裝進口專業血糖機</div>
                                                                                                                     
                                                         </div>
                                                 </div>
                                                                                                         
-                                                <div class="col-3 d-flex">
+                                                <div class="col-2 d-flex">
                                                     <div class="col-6 d-flex justify-content-center align-items-center">30</div>
                                                     <div class="col-6 d-flex justify-content-center align-items-center">50/日</div>
                                                 </div>
                                                                                                     
                                                 <div class="col-3  d-flex ">
-                                                    <div class="col-6 d-flex justify-content-center align-items-center">到貨日 20210701</div>
+                                                    <div class="col-6 d-flex justify-content-center align-items-center">2021-07-01</div>
                                                     
-                                                    <div class="col-6 d-flex justify-content-center align-items-center">歸還日 20210730</div>
+                                                    <div class="col-6 d-flex justify-content-center align-items-center">2021-07-30</div>
                                                 </div>
 <!-- btn btn-primary stat 留下評價按鈕會跳出一個小視窗 -->                                                
-                                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <div class="col-3 d-flex justify-content-evenly align-items-center">
+                                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                         留下評價
                                                         </button>
+                                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            修改評價
+                                                            </button>
                                                     </div>
 <!-- btn btn-primary end 留下評價按鈕會跳出一個小視窗 -->                                                    
                                             </form>
