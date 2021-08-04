@@ -52,3 +52,4 @@ var ops = {
     format: "yyyy-mm-dd", //日期格式 
 };
 $("#birthday").datepicker(ops);
+
