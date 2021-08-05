@@ -76,7 +76,7 @@ insert  into `comment`(`PRODID`,`PRODNAME`,`ASSCUSTID`,`ASSFRACTION`,`VISITS`,`A
 ('A0001','照護型自推輪',103,100.0,22,'快速又方便'),
 ('D0001','機械式助步器',103,100.0,22,'妙哉妙哉二老高堂喜歡的不得了'),
 ('100051','介護型股煞休閒輪椅',107,100.0,22,'覺得不錯,難怪各大貴人都推薦'),
-('400011','機械式助步器',108,100.0,22,'租來讓媽媽短時間使用,覺得保養很好,完全部會卡卡的。打算直接購買。'),
+('400011','機械式助步器',108,100.0,22,'租來讓媽媽短時間使用,覺得保養很好,完全不會卡卡的。打算直接購買。'),
 ('600031','居家等級護理床墊',109,100.0,22,'雖然是租用二手物品,但物美價廉,可以看出有用心清理床墊,爸爸說躺的很舒適。'),
 ('700011','單側門檻式斜坡板',110,100.0,22,'老年中風,想自己在家裡打造無障礙空間,先租來用用看,覺得品質好,之後打算直接購買。'),
 ('800021','醫用級電子血壓計',105,100.0,22,'市面上太多血壓計,還好這裡可以先租用,在家使用覺得很可以,決定推薦大家直接購買。');
@@ -167,11 +167,11 @@ insert  into `ord`(`TITLE`,`ORDID`,`ORDERDATE`,`CUSTID`,`NAME`,`RECINAME`,`RECIC
 ('R',00000000004,'2021-07-01 22:46:18',108,'武責天','武責天','宜蘭','宜蘭礁溪吳沙紀念館','0986868686',750,NULL,'線上刷卡','宅配',NULL,'2021-07-07 22:48:09',NULL),
 (NULL,00100000020,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'NULL',NULL,NULL);
 
-/*Table structure for table `proble` */
+/*Table structure for table `problem` */
 
-DROP TABLE IF EXISTS `proble`;
+DROP TABLE IF EXISTS `problem`;
 
-CREATE TABLE `proble` (
+CREATE TABLE `problem` (
   `CUSTID` int(11) DEFAULT NULL,
   `TITLE` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `ORDID` int(11) unsigned zerofill DEFAULT NULL,
@@ -182,9 +182,9 @@ CREATE TABLE `proble` (
   `ORDTIME` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `proble` */
+/*Data for the table `problem` */
 
-insert  into `proble`(`CUSTID`,`TITLE`,`ORDID`,`EMAIL`,`PHONE`,`PROBLETYPE`,`PROBLE`,`ORDTIME`) values 
+insert  into `problem`(`CUSTID`,`TITLE`,`ORDID`,`EMAIL`,`PHONE`,`PROBLETYPE`,`PROBLE`,`ORDTIME`) values 
 (103,'R',00000000001,'historymylove@yahoo.com.tw','0996325841','RENT','請問租借也可以貨到付款嗎?',NULL),
 (103,'B',00000000001,'historymylove@yahoo.com.tw','0996325841','BUY','請問產品有鑑賞期嗎',NULL);
 
@@ -388,7 +388,7 @@ CREATE TABLE `reserve` (
   `PRODID` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `NUMBER` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `PRODNAME` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `WAITTYPE` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `WAITTYPE` int(10) DEFAULT NULL,
   `RESERVEDATE` datetime DEFAULT NULL,
   `NAME` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `CUSTID` int(11) DEFAULT NULL,
@@ -399,10 +399,10 @@ CREATE TABLE `reserve` (
 /*Data for the table `reserve` */
 
 insert  into `reserve`(`TITLE`,`RESERVEID`,`WAITNUMBER`,`CLASS`,`PRODID`,`NUMBER`,`PRODNAME`,`WAITTYPE`,`RESERVEDATE`,`NAME`,`CUSTID`) values 
-('S',0000000001,2,'R','50004','1','沐浴躺椅','等待人數:1','2021-07-02 22:41:33','李後囑',107),
-('S',0000000002,2,'R','50004','1','沐浴躺椅','等待人數:1','2021-07-03 22:43:43','杜睦',101),
-('S',0000000003,2,'R','50007','1','一字型安全扶手','等待人數:1','2021-07-03 22:45:31','杜睦',101),
-('S',0000000004,2,'R','50007','2','一字型安全扶手','等待人數:1','2021-07-03 22:51:18','仲謀',110),
+('S',0000000001,2,'R','50004','1','沐浴躺椅',1,'2021-07-02 22:41:33','李後囑',107),
+('S',0000000002,2,'R','50004','1','沐浴躺椅',1,'2021-07-03 22:43:43','杜睦',101),
+('S',0000000003,2,'R','50007','1','一字型安全扶手',1,'2021-07-03 22:45:31','杜睦',101),
+('S',0000000004,2,'R','50007','2','一字型安全扶手',1,'2021-07-03 22:51:18','仲謀',110),
 ('S',0000000005,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
