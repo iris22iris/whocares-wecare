@@ -1,0 +1,8 @@
+select user from mysql.user;
+先查看自己的使用者名稱有甚麼mysql.session與mysql.sys為系統預設。
+use mysql;
+進入MySQL庫
+UPDATE USER SET USER ='' WHERE USER ='';
+輸入update user set user =’新使用者名稱’ where user =’舊使用者名稱’
+
+之後關閉MySQL，再開啟就完成了
