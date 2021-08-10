@@ -82,11 +82,6 @@
 
 }
 
-.itemcontainer2{
-    background-image: url(../image/background.jpg);
-    background: none;
-}
-
 .list2{
     border:1px gainsboro solid ;
     color:  rgb(115,99,87);
@@ -175,6 +170,10 @@
     left: -100px;
     margin: auto;
 }
+
+
+/* --------評價視窗------- */
+
 
 
   /* --------footer------ */
