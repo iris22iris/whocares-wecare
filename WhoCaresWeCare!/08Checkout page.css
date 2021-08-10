@@ -1,0 +1,137 @@
+
+#aaa{
+    background-color:pink;
+    height: 800px;
+    width: 1200px;
+    position:absolute;
+}
+#Header{
+    width: 1685px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 15px;
+    color: #fffaf3;
+    font-weight: bold;
+    background-color: #f9c81e;
+}
+#first{
+    width: 1685px;
+    height: 600px;
+    /* text-align: center; */
+    line-height: 14px;
+    font-size: 15px;
+    color: black;
+    /* font-weight: bold; */
+    /* background-color: green; */
+    margin: 10px;
+    border: 5px;
+}
+#table{
+    width: 1400px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+#product{
+    width: 1685px;
+    height: 600px;
+    text-align: center;
+    line-height: 14px;
+    font-size: 15px;
+    color: #fffaf3;
+    /* font-weight: bold; */
+    /* background-color: purple; */
+}
+
+#Sidebar{
+    display: inline-flex;
+    width: 1600px;
+    float: left;
+    height: 200px;
+    /* text-align: center; */
+    line-height: 30px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    background-color:white;
+    flex: auto;
+}
+.user{
+    width: 800px;
+    height: 400px;
+    /* background-color: tomato; */
+    
+
+ 
+}
+.info{
+    display: inline-flex;
+    /* background: burlywood; */
+    margin: 5px;
+    border: 2px;
+
+    
+}
+#Body{
+    width: 800px;
+    height:200px;
+    float:left;
+    line-height:30px;
+    font-size:15px;
+    color:black;
+    font-weight:bold;
+    /* background-color:orchid; */
+}
+.address{
+    /* background: red; */
+    margin: 5px;
+    border: 2px;
+
+}
+#final{
+    width:1600px;
+    height: 350px;
+    /* text-align:center; */
+    line-height:80px;
+    font-size:15px;
+    color:black;
+    font-weight:bold;
+    /* background-color:pink; */
+    display: inline-flex;
+}
+.order{
+    font-size: 25px;
+    width: 500px;
+    height:300px;
+    /* background-color: coral; */
+    margin: 20px;
+    border: 2px;
+}
+.pay{
+    font-size: 25px;
+    width: 400px;
+    height: 300px;
+    /* background-color: darkgreen; */
+    margin: 20px;
+    border: 2px;
+}
+.total{
+    font-size: 25px;
+    width: 300px;
+    height: 300px;
+    /* background-color: burlywood; */
+    margin: 20px;
+    border: 2px;
+}
+    #Footer{
+    width:1685px;
+    height:80px;
+    text-align:center;
+    line-height:80px;
+    font-size:15px;
+    color:#fffaf3;
+    font-weight:bold;
+    background-color:#f9c81e;
+}
