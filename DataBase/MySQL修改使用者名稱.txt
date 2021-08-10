@@ -5,4 +5,4 @@ use mysql;
 UPDATE USER SET USER ='' WHERE USER ='';
 輸入update user set user =’新使用者名稱’ where user =’舊使用者名稱’
 
-之後關閉MySQL，再開啟就完成了
+之後關閉MySQL(須重啟整個MySQL Service，非重啟小海豚)，再開啟就完成了
