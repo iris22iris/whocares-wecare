@@ -25,7 +25,7 @@
 
 <!-- title start! -->
 <div class="title container">
-
+  <i class="fas fa-shopping-cart pe-2"></i>租賃設備清單
 </div>
 <!-- title end! -->
 
@@ -34,38 +34,133 @@
 <!-- List start! -->
 <div class="list container">
     <div class="row list-head">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="col">商品圖片</div>
+        <div class="col-2">商品名稱</div>
+        <div class="col">租金/日</div>
+        <div class="col">租賃天數</div>
+        <div class="col">折扣金額</div>
+        <div class="col">小計</div>
+        <div class="col-2">租賃起訖日期</div>
+        <div class="col">新品價格</div>
+        <div class="col"><i class="far fa-trash-alt" id="deleteIcon"></i></div>
     </div>
     <div class="row list-item">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="col">
+          <img src="../image/product/A0001.jpg" alt="">
+        </div>
+        <div class="col-2" id="productName">
+          <dl>
+            <li id="productId">A122222222</li>
+            <li>多功能型摺疊輪椅</li>
+          </dl>
+        </div>
+        <div class="col">50元</div>
+        <div class="col">30天</div>
+        <div class="col">-</div>
+        <div class="col">
+          <dl>
+            <li>1500元</li>
+            <li>
+              <!-- 如果有折扣會顯示折扣後 -->
+            </li>
+           </dl>
+        </div>
+        <div class="col-2">
+          <dl>
+            <li>起租日: 2021-08-31</li>
+            <li>退租日: 2021-09-29</li>
+          </dl>
+        </div>
+        <div class="col">
+          <dl>
+            <li id="productPrice">999元</li>
+              <button  type="button" id="recommandBtn" href="#">
+              前往購買
+              </button>          
+          </dl>
+        </div>
+        <div class="col">
+          <input type="checkbox" name="delete" id="delete">
+        </div>
     </div>
     <div class="row list-item">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+      <div class="col">
+        <img src="../image/product/A0001.jpg" alt="">
+      </div>
+      <div class="col-2" id="productName">
+        <dl>
+          <li id="productId">A122222222</li>
+          <li>多功能型摺疊輪椅</li>
+        </dl>
+      </div>
+      <div class="col">50元</div>
+      <div class="col">30天</div>
+      <div class="col">-</div>
+      <div class="col">
+        <dl>
+          <li>1500元</li>
+          <li>
+            <!-- 如果有折扣會顯示折扣後 -->
+          </li>
+         </dl>
+      </div>
+      <div class="col-2">
+        <dl>
+          <li>起租日: 2021-08-31</li>
+          <li>退租日: 2021-09-29</li>
+        </dl>
+      </div>
+      <div class="col">
+        <dl>
+          <li id="productPrice">999元</li>
+            <button  type="button" id="recommandBtn" href="#">
+            前往購買
+            </button>          
+        </dl>
+      </div>
+      <div class="col">
+        <input type="checkbox" name="delete" id="delete">
+      </div>
+  </div>
+  <div class="row list-item">
+    <div class="col">
+      <img src="../image/product/A0001.jpg" alt="">
     </div>
+    <div class="col-2" id="productName">
+      <dl>
+        <li id="productId">A122222222</li>
+        <li>多功能型摺疊輪椅</li>
+      </dl>
+    </div>
+    <div class="col">50元</div>
+    <div class="col">30天</div>
+    <div class="col">-</div>
+    <div class="col">
+      <dl>
+        <li>1500元</li>
+        <li>
+          <!-- 如果有折扣會顯示折扣後 -->
+        </li>
+       </dl>
+    </div>
+    <div class="col-2">
+      <dl>
+        <li>起租日: 2021-08-31</li>
+        <li>退租日: 2021-09-29</li>
+      </dl>
+    </div>
+    <div class="col">
+      <dl>
+        <li id="productPrice">999元</li>
+          <button  type="button" id="recommandBtn" href="#">
+          前往購買
+          </button>          
+      </dl>
+    </div>
+    <div class="col">
+      <input type="checkbox" name="delete" id="delete">
+    </div>
+</div>
 </div>
 <!-- List end! -->
 
