@@ -22,8 +22,9 @@
 }
 
 #body{
-    background: rgb(250, 246, 243);
-    /* background-image: url(../image/background5.jpg); */
+    /* background:white; */
+    /* background-image: url(../image/background4.jpg); */
+    background-image: url(../image/background5.jpg);
     background-attachment: fixed;
 }
 
@@ -68,6 +69,12 @@ div>img{
     width: 100%;
 }
 
+li>a{
+    text-decoration: none;
+    border-bottom: 2px dotted;
+    color: rgb(66, 58, 53);
+}
+
 .col {
     /* border: 1px solid blue; */
     display: flex;
@@ -88,23 +95,39 @@ div>img{
     border-bottom: 1px silver solid;
     color: rgb(66, 58, 53);
     font-size: 18px;
+    background-color: white;
 }
 
-#productName{
+.productName{
     display: flex;
     flex-wrap: nowrap;
 }
 
-#productId{
+.productId{
     font-size: small;
 }
 
-#productPrice{
+.productPrice{
     display: flex;
     justify-content: center;
 }
+.promoteTag{
+    font-size: small;
+    padding: 3px;
+    color: white;
+    background-color: orange;
+    
+}
+/* <!-- 沒有折扣的時候不用刪除線 --> */
+.total{
+    text-decoration:line-through;
+}
 
-#recommandBtn{
+.discountTotal{
+    color: rgb(163, 7, 38);
+}
+
+.recommandBtn{
     color: white;
     background-color: tomato;
     padding: 5px 6px;
@@ -128,23 +151,52 @@ button>a{
 /* ------- Count ------- */
 .count{
     height: 30vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    background-color:tan
 }
 
 
+/* -----bottom-left----- */
 .bottom-left{
-    background:tomato;
-    width: 70%;
-    
-    
+    /* background:tomato; */
+    width: 60%; 
+}
+div>h5{
+    margin-top: 10px;
 }
 
+
+/* -----bottom-right----- */
 .bottom-right{
-    background:steelblue;
-    width: 30%;
+    /* background:steelblue; */
+    width: 40%;
+}
+
+.count-row{
+    height: 25%;
+    /* background-color: red; */
+    /* border: 1px yellow solid; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.count-header{
+   /* background:rgb(66, 58, 53); */
+   display: flex;
+   justify-content:flex-end;
+   font-size: 20px;
+}
+
+.col-12{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 }
 
 
