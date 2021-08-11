@@ -43,14 +43,16 @@
     height: 100px;    
 }
 
+
 .textSize{
-    font-size: 19px;
+    font-size: 18px;
+    display: inline-block;
 
 }
 .navbar-nav{
     display: flex;
     justify-content:space-around;
-    
+    flex-wrap: wrap;
 }
 .left-menu{
     display: flex;
@@ -59,6 +61,9 @@
     
 }
 
+.nav-item{
+    padding: auto 0px;
+}
 
 
 
