@@ -73,11 +73,30 @@
 
 /* ------dmImage------- */
 .dmImage{
-    display: flex;
-    justify-content: center;
+   
     /* border: rgb(20, 19, 19) solid; */
 
 }
+
+#image {
+    display: flex;
+    justify-content: center;
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: #000; */
+    overflow: hidden;
+  }
+
+#image img {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+#image[zoomed] img {
+    transform-origin: 0% 0%; /* Added */
+    transform: translate(calc(var(--x) * -100%), calc(var(--y) * -100%)) scale(3); /* Updated */
+  }
 
 #myimage{
     width: 90%;
