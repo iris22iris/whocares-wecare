@@ -83,6 +83,10 @@
     width: 90%;
 }
 
+.downloadBtn{
+    border-radius: 20px;
+    padding: 3px;
+}
 
 /* --------footer------ */
 .footer{
