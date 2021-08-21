@@ -88,9 +88,16 @@
     font-size: 16px;
 }
 
+
+.containerPOPUP{
+
+    font-size:20px;
+}
+
 .modal-body{
     font-size:25px;
-    
+    background-image: url(../image/background.jpg);
+   
 }
 
 .modal-body1{
@@ -100,8 +107,10 @@
 
 .modal-title1{
     
-    background-color: rgb(117,76,36);
-    
+   /* background-image: url(../image/background.jpg);*/
+   background-color: #ffa500;
+   color:saddlebrown dotted
+   
 }
 
 .list{
