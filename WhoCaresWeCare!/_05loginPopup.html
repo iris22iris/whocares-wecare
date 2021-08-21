@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>租賃設備訂單查詢</title>
+    <link rel="stylesheet" href="_05loginPopup.css"> 
+     <!-- bootstrap --> 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- sweetAlert -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>  
+     
+     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/4e44561671.js"></script>
+     
+</head>
+<body class="index">
+    <iframe src="index.html" frameborder="0" width="100%" height="100px" scrolling= "no"
+    ></iframe>
+<!-- rentitemtitlecontent star  標題開始-->
+        <div class="rentitemtitlecontent ">
+                                
+            <div class="rentitemtitle p-3 d-flex justify-content-start align-items-center">
+                <li>
+                    <i class="fas fa-th-large pe-2" aria-hidden="true"></i>租賃設備訂單紀錄
+                </li>
+            </div>
+            <hr size="8px"   >
+<!-- rentitemtitlecontent end 標題結束 -->     
+
+<!-- header-searchcontainer star  查詢訂單功能開始 "輸入訂單編號按下搜尋按鈕會帶到要找的訂單表單"-->
+            <div class=" header-searchcontainer col-12 d-flex  ">
+                                
+                <div class="  col-12 p-3  d-flex align-items-center ">
+                    <form class="row g-3 align-items-center">
+                        <div class="col-5 ">
+                        <label class="enter ">您好，請輸入訂單編號查詢:</label></div>
+                        <div class="col-5">
+                        <input type="search" class="form-control "   id="enter"></div>
+                        <div class="col-2">
+                        <button type="button" class="btn btn-warning ">確認</button></div>
+                    </form>
+                </div>
+            </div>    
+        </div>      
+<!-- header-searchcontainer end  查詢訂單功能結束-->
+        
+<!-- main start  查詢訂單表格開始-->                   
+        <div class="main  d-flex justify-content-center align-items-center ">
+            <div class=" col-12 topContainer container p-3 d-flex justify-content-center align-items-center ">
+   <!-- itemcontainer  star  訂單進度條開始-->             
+                <div class="itemcontainer col-12">
+                    
+                        <ol class="list  ">                           
+                            <li>  
+                                <i class="fa fa-solid fa-list fa-2x " aria-hidden="true"></i>訂單成立                                                
+                            </li>
+                            <li>
+                                <i class='fas fa-money-bill-alt fa-2x' aria-hidden="true"></i>已收款
+                            </li>                                                              
+                            <li class="active">
+                                <i class="fa fa-archive fa-2x" aria-hidden="true"></i>出貨中
+                            </li>
+                                                                                                                                                    
+                            <li>
+                                <i class="fa fa-truck fa-2x " aria-hidden="true"></i>配送中
+
+                            </li>
+                            <li> 
+                                <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>已送達
+                            </li>
+                        </ol>
+    <!-- itemcontainer end  訂單進度條結束-->
+
+    <!-- itemformlist2  star  訂單細項表頭條開始-->     
+                    <div class =" itemform2  ">                                                            
+                       <!-- // <ol class="itemformlist2"> -->
+                            <div class="itemcontainer2 col-12">
+                                   
+                                    <div class=" col-12   p-3 d-flex justify-content-center align-items-center ">                                                                      
+                                        <form class="row  itemdetail col-12 " >
+                                            <div class="col-4 d-flex justify-content-center ">                                                                           
+                                                <div class="col-6 d-flex justify-content-center align-items-center white p-1">訂單號碼</div>
+                                                <div class="col-6 d-flex justify-content-center align-items-center white p-1">訂單日期</div>                                                                            
+                                            </div>
+                                                                                                                
+                                            <div class="col-4 d-flex">
+                                                <div class="col-6 d-flex justify-content-center align-items-center white p-1">訂單金額</div>
+                                                <div class="col-6 d-flex justify-content-center align-items-center white p-1">付款方式</div>
+                                            </div>
+                                            <div class="col-4 d-flex">
+                                                <div class="col-12 d-flex justify-content-center align-items-center white p-1">訂單備註</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                
+                            </div>    
+                       
+                    </div>
+     <!-- itemformlist2  end 訂單細項表頭條結束-->
+     
+    <!-- itemformlist3  star  訂單編號基本資訊開始-->     
+                    <div class=" itemformlist3  d-flex justify-content-center align-items-center flex-wrap">
+                        <form class="row col-12 ">
+<!-- accordion-header-button  star  按下v按鈕會出現下拉式訂單詳細資訊 開始-->                                      
+                            <div class="col-12   d-flex  pb-3">
+                                    <!-- <h2 class="accordion-header" "> -->
+                                       
+                                    <!-- </h2> -->
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <button class="accordion-button collapsed" id="flush-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    </button>
+                                    A0000000000
+                                    </div>
+                                    <div class="col-8 ps-5 d-flex justify-content-center align-items-center">20210729</div>   
+                                </div>
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <div class="col-6 d-flex justify-content-center align-items-center">1500</div>
+                                    <div class="col-6 d-flex justify-content-center align-items-center">貨到付款</div>         
+                                </div>
+                                <div class="col-4 p-2 d-flex justify-content-center align-items-center">
+                                    <div class="col-12 d-flex justify-content-center align-items-center">到貨前先通話告知不然你們物流都很懶沒事先通知,我已經兩次收不到了,我就是受傷才需要輪椅阿</div>
+                                </div>                           
+                            </div>
+<!-- accordion-header-button  end  按下v按鈕會出現下拉式訂單詳細資訊結束-->                            
+                        </form>
+                    </div>
+    <!-- itemformlist3  end  訂單編號基本資訊細項結束-->                                   
+                   
+                </div>
+            </div>  
+
+<!-- container2  star  下拉式表格(顯示每筆訂單的詳細資訊) 開始-->
+            <div class=" col-12  container p-1 d-flex justify-content-center align-items-center ">
+                                                                    
+                <div class="itemcontainer2  col-12">
+<!-- itemtitle2  star  下拉式表格 開始-->                    
+                    
+                        <div class="accordion accordion-flush " id="accordionFlushExample">
+                            <div class="accordion-item">                                    
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+    <!-- accordion-body  star  表格 開始-->                                    
+                                    <div class="accordion-body">
+
+                                        <div class=" col-12   d-flex justify-content-center align-items-center flex-wrap">
+<!-- itemdetail  star  表格表頭 開始-->                                            
+                                            <div class="row col-12  itemdetail" >
+                                                    <div class="col-4 d-flex  ">
+                                                        <div class="col-3 d-flex justify-content-center align-items-center white p-1">商品編號</div>
+                                                        <div class="col-9 d-flex justify-content-center align-items-center white p-1">商品名稱</div>
+                                                                                                    
+                                                    </div>
+                                                                                        
+                                                    <div class="col-2 d-flex">
+                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃天數</div>
+                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">單價</div>
+                                                    </div>
+                                                    <div class="col-3 d-flex">
+                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃起始日</div>
+                                                        <div class="col-6 d-flex justify-content-center align-items-center white p-1">租賃到期日</div>
+                                                    </div>
+                                                    <div class="col-3 d-flex">
+                                                        <div class="col-12 d-flex justify-content-center align-items-center white p-1">評價</div>
+                                                        
+                                                    </div>
+                                            </div>
+                                        </div>
+<!-- itemdetail  end  表格表頭 結束-->
+
+<!-- list2  star  表格表頭 開始-->                                                                               
+                                        <div class="col-12 list2 p-2 d-flex justify-content-center align-items-center flex-wrap">
+                                            <form class="row col-12 ">                                                 
+                                                <div class="col-4 d-flex ">
+                                                        <div class="col-3 d-flex justify-content-center align-items-center">
+                                                            <i class="d-flex justify-content-center align-items-center"></i>AA0001
+                                                        </div>
+                                                        <div class="col-9 d-flex justify-content-center align-items-center">
+                                                            <div class=" d-flex justify-content-center align-items-center">德國原裝進口專業血糖機</div>
+                                                                                                                    
+                                                        </div>
+                                                </div>
+                                                                                                        
+                                                <div class="col-2 d-flex">
+                                                    <div class="col-6 d-flex justify-content-center align-items-center">30</div>
+                                                    <div class="col-6 d-flex justify-content-center align-items-center">50/日</div>
+                                                </div>
+                                                                                                    
+                                                <div class="col-3  d-flex ">
+                                                    <div class="col-6 d-flex justify-content-center align-items-center">2021-07-01</div>
+                                                    
+                                                    <div class="col-6 d-flex justify-content-center align-items-center">2021-07-30</div>
+                                                </div>
+<!-- btn btn-primary stat 留下評價按鈕會跳出一個小視窗 -->                                                
+                                                    <div class="col-3 d-flex justify-content-evenly align-items-center">
+                                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        留下評價
+                                                        </button>
+<!-- 功能：留下評價以後，留下評價的btn就不能按了，然後修改評價的btn才可以按，裡面顯示已寫的評價，按下編輯按鈕才可以修改，另外需有取消按鈕跟確認修改按鈕 -->                            
+                                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            修改評價
+                                                            </button>
+                                                    </div>
+<!-- btn btn-primary end 留下評價按鈕會跳出一個小視窗 -->                                                    
+                                            </form>
+
+                                        </div> 
+<!-- list2  end  表格表頭 結束-->
+                                            
+                                    </div>
+<!-- accordion-body  end  表格 結束-->
+
+
+
+
+
+
+
+
+<!-- modal fade  star  使用心得/評分小視窗 開始 bg-warning text-dark-->                                        
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog col-12">
+        <div class="modal-content   ">
+            
+                <h2 class="modal-title1 p-3 col-12 d-flex justify-content-evenly bg-warning text-dark   " id="exampleModalLabel">登入會員</h2>                                                                
+               
+                                                                       
+                    
+                    
+                    <div class="container p-3 ">
+                        <form class="row g-3 form">
+        <!-- 功能:登入會員會自動顯示會員帳號/email/電話，未登入的話可以自己key -->
+                            <!-- account&orderno start -->
+                            <div class="col-3 ">
+                               
+                                <label for="inputAccount" class="form-label">會員帳號:</label>
+
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="inputAccount">
+                            </div>
+                            <div class="col-3">
+                                <label for="inputAccount" class="form-label">會員密碼:</label>
+
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="inputAccount">
+                            </div>
+                
+
+                            <div class="form__group  ">
+                                <label>
+                                     <input style="margin-left:120px;" type="checkbox" name="remember" > 記住帳密  
+                                    </label>
+                            </div>
+
+                            
+                            <div class="col-3">
+                                <label for="inputAccount" class="form-label">驗證碼:</label>
+
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control" id="inputAccount">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="inputAccount">
+                            </div>
+               
+                <div class="modal-footer d-flex justify-content-center align-items-center ">                                   
+                    <div class=" ">                       
+                        <div class="button   d-flex justify-content-center align-items-center ">
+                                <input type="button" class="btn btn-primary justify-content-center " value="Login"
+                                onClick="timedMsg(this)">
+
+                                
+                        </div>   
+                          
+                           
+
+                            <nav class="hyperlink col-12 d-flex justify-content-center ">
+                                
+                                <div class="Hyperlinkbutton    ">
+                                    <a href="" class="sideBtn">尚未註冊</a>
+                                    <a href="" class="sideBtn">忘記密碼</a>
+                                </div>
+                               
+                              </nav>
+
+                     </form>        
+                    </div>                                             
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- modal fade  end  使用心得/評分小視窗 結束-->
+</div>
+                            </div>
+                                            
+                        </div>                                                                 
+                   
+<!-- itemtitle2  end  下拉式表格 結束-->                                    
+                </div>
+            </div>
+<!-- container2  end  下拉式表格(顯示每筆訂單的詳細資訊)結束-->
+        </div>
+<!-- main end  查詢訂單表格結束-->                        
+                    
+
+<!-- btn  star  下拉式顯示每筆訂單的詳細資訊開始-->
+                                        <div class=" button col-12 p-3 d-flex justify-content-center align-items-center">
+                                            <button type="submit" class="btn btn-secondary"  >返回</button>
+                                        </div>
+<!-- btn  end  下拉式顯示每筆訂單的詳細資訊結束-->                                        
+
+<!-- footer Start! -->
+                                    <div class="footer container-fluid">
+<!-- left-footer -->
+                                        <div id="left-footer">
+                                            <dl class="row pt-4 pb-2 ps-4">
+                                                <dt class="col-sm-3 d-flex justify-content-end">
+                                                    <i class="fas fa-map-marker-alt pe-1"></i>
+                                                        公司地址:
+                                                </dt>
+                                                <dd class="col-sm-9">
+                                                        台北市大安區忠孝東路三段1號
+                                                </dd>      
+                                                <dt class="col-sm-3 d-flex justify-content-end">
+                                                    <i class="fas fa-phone pe-1"></i>
+                                                        連絡電話:
+                                                </dt>
+                                                <dd class="col-sm-9">
+                                                        (02) 2211-3344
+                                                </dd>       
+                                                <dt class="col-sm-3 d-flex justify-content-end">
+                                                    <i class="far fa-smile pe-1"></i>
+                                                        服務時段:
+                                                </dt>
+                                                <dd class="col-sm-9">
+                                                        週一至週五(例假日除外) 9:00AM - 17:30PM
+                                                </dd>
+                                        </div>
+<!-- right-footer -->
+                                        <div id="right-footer">
+                                                <ul class="list-inline pt-4 d-flex justify-content-start align-items-end">
+                                                    <li class="list-inline-item px-4">
+                                                        <i class="fab fa-facebook-square"></i>
+                                                    </li>
+                                                    <li class="list-inline-item px-4">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </li>
+                                                    <li class="list-inline-item px-4">
+                                                        <i class="fab fa-line"></i>
+                                                    </li>
+                                                </ul>
+                                            <div class="copyright">
+                                                &nbsp;&nbsp; All Content Copyright &copy; 2021
+                                            </div>
+                                        </div>
+                                    </div>
+<!-- footer End! -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    function timedMsg()
+    {   
+        Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: '登入成功',
+        showConfirmButton: false,
+        timer: 1000
+     })
+    }
+    </script>
+        
+</body>
+</html>
