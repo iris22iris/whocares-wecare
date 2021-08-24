@@ -22,11 +22,14 @@
     src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
 }
 
-#body{
-    background: rgb(250, 246, 243);
-    /* background-image: url(../image/background.jpg); */
-    background-attachment: fixed;
+#body {
+	/* background: rgb(250, 246, 243); */
+	background-image: url(../image/background7_工作區域\ 1.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
 }
+
 
 
 .main{
@@ -39,22 +42,38 @@
 /* ------side-menu------- */
 
 .side-menu{
-    border-right: black dotted ;
+    /* border-right: black dotted ; */
     border-width: 0.25rem;
 }
 .side-menu .button{
-    height: 5rem;
+    height: 4rem;
+    background-color: snow;
+    margin: 0px 30px;
+    border: 0.5px #ccc solid;
+    font-size: large;
+}
+
+.button{
+    border: none;
+}
+
+.sideBtn{
+    text-decoration: none;
+    color:saddlebrown;
+    border-radius: 10px;
+}
+
+.sideSpace{
+    height: 15%;
 }
 /* ------title------- */
 .title{
     color:  rgb(117,76,36);
+    border-bottom: rgb(117,76,36) solid 2px;
   
 }
 /* ------mainborder------- */
-.mainborder{
-   
-    border:black solid ;
-}
+
 
 /* q_a .accordionwidth setting */
 .accordionwidth{
@@ -62,6 +81,12 @@
 }
 
 /* --------footer------ */
+.end{
+    display: flex;
+    align-items: flex-end;
+    height: 40vh;
+}
+
 .footer{
     background:rgb(115,99,87);
     width: 100%;

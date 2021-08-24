@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+     <title>Who Cares? We Care!</title>   
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+
+   <!-- Main-header Start! -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+          <img src="../image/whiteLogo.png" alt="回到首頁" id="logo">
+        </a>
+
+      <!-- rwd toggler start -->
+      <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- toggler end -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!-- 有空的話可以寫個功能是到這一頁前面就會有拐杖ICON,其他的則不會有 -->
+        <!-- left Menu -->
+        <ul class="navbar-nav  me-auto mb-4 mb-lg-0 left-menu">
+          <li class="nav-item ">
+            <a class="nav-link textSize px-4 " href="#"
+            style="color:white;">
+            <i class="fas fa-crutch px-1"></i>關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textSize px-4" href="#"
+            style="color:white;">
+            <i class="fas fa-crutch px-1"></i>租賃設備</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textSize px-4" href="#"
+            style="color:white;">
+            <i class="fas fa-crutch px-1"></i>購物商城</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link textSize px-4" href="#"
+            style="color:white;">
+            <i class="fas fa-crutch px-1"></i>客服中心</a>
+          </li>
+<!-- 可以增加功能為登入才會顯示會員中心這個連結 -->
+          <a class="nav-link textSize px-4" href="#"
+          style="color:white;">
+          <i class="fas fa-crutch px-1"></i>會員中心</a>
+          </li>
+        </ul>
+        <!-- right menu -->
+        <li class="nav-item">
+            <a class="nav-link" href="#" 
+            style="padding: 0px;">
+<!-- 選擇租賃設備清單/購物車清單 -->
+            <img src="../image/cartIcon.png" alt="購物車"></a>
+          </li>
+        </ul>
+<!-- 可以寫登入後換成會員圖片的功能 -->
+        <li class="nav-item">
+            <a class="nav-link" href="#未登入先導至singin_singup" 
+            style="padding: 0px;">
+            <img src="../image/memberIcon.png" alt="會員"></a></a>
+          </li>
+        </ul>
+
+        <!-- Search -->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" 
+          placeholder="Search Product" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+   <!-- Main-header End -->
+   
+
+<!-- 廣告圖片大小&button顏色 還須調整 -->
+   <!-- Slider-img Start! -->
+   <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="../image/indexAd1.jpg" class="d-block w-100" alt="ad1">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="../image/indexAd2.jpg" class="d-block w-100" alt="ad2">
+      </div>
+      <div class="carousel-item">
+        <img src="../image/indexAd3.jpg" class="d-block w-100" alt="ad3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+   <!-- Slider-img End -->
+
+
+   <!-- <div id="Header">Header 欄位 -->
+    
+  <!-- </div> -->
+  
+
+  <div id="first">
+      <!--商品結帳頁面-->
+          <h1>結帳專區</h1>
+  
+      <!--商品清單-->
+      <div class="table">
+          <table width="1200" >
+              <tr colspan="6" color="brown">
+                  <th width="300"></th><th width="300">商品名稱</th><th width="300">起訖日期</th><th width="300">租賃天數</th><th width="300">單價</th><th width="300">折抵</th><th width="300">合計</th>
+              </tr>
+              <tr>
+                      <td><img src="" with="300" heigh="200" alt="一張圖片"></td>
+                      <td>商品編號A100002<br><br>手動輪椅</td>
+                      <td>到貨2020/05/20<br><br>歸還2020/06/20</td>
+                      <td>40</td>
+                      <td>50</td>
+                      <td>20</td>
+                      <td>1950</td>
+              </tr>
+              <tr>
+                  <td><img src="" with="300" heigh="200" alt="一張圖片"></td>
+                  <td>商品編號A100002<br><br>手動輪椅</td>
+                  <td>到貨2020/05/20<br><br>歸還2020/06/20</td>
+                  <td>40</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>1950</td>
+              </tr>
+              <tr>
+                  <td><img src="" with="300" heigh="200" alt="一張圖片"></td>
+                  <td>商品編號A100002<br><br>手動輪椅</td>
+                  <td>到貨2020/05/20<br><br>歸還2020/06/20</td>
+                  <td>40</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>1950</td>
+          </tr>
+
+          </table>
+          <br>
+          <h3><text>運送方式:</text>
+              <select name="checktime" id="time">
+                 <option value="0">店到店/1KG/70元</option> 
+                 <option value="1">物流宅配/20KG/250元</option>      
+              </select></h3>
+          
+      <div class="item">
+
+  </div>
+  <hr>
+  
+  
+  
+  <div id="final">
+      <div class="order">
+          <h2>訂單備註:</h2>
+          <input type="text">       
+      </div>
+      <div class="pay">
+          <h2>付款方式:</h2>
+          <select name="checkpay" id="card">
+              <option value="0">PAYPOL</option> 
+              <option value="1">WebATM匯款</option>      
+           </select>
+      </div>
+      <div class="total">
+          <table>
+              <tr colspan="2">
+                  <tr>
+                      <td>商品金額:</td><td>6000元</td>
+                  </tr>
+                  <tr>
+                      <td>運費:</td><td>0元</td>
+                  </tr>
+                  <tr>
+                      <td>優惠折抵:</td><td>-150元</td>
+                  </tr>
+                  <tr>
+                      <td>合計金額:</td><td>5850元</td>
+                  </tr>
+              </tr>
+          </table>
+          
+      </div>
+
+
+  </div>
+  <div style='clear:both;'></div>
+  <hr>
+  <div id="Sidebar">
+  <!--宅配資訊    -->
+  <div class="info " >       
+      <div class="user ">
+          <h2>宅配資訊</h2>
+          <form>
+              <text>收件人:</text>
+              <input type="text" value="預設會員名字">
+              <text>連絡電話:</text>
+              <input type="tel" value="預設會員電話">
+              <br>
+              <text>城市:</text>
+              <select name="city" id="city">
+                 <option value="1">台北市</option> 
+                 <option value="1">新北市</option> 
+                 <option value="1">桃園市</option> 
+                  
+              </select>
+              <text>收件時段:</text>
+              <select name="checktime" id="time">
+                 <option value="0">早上(9:00-12:00)</option> 
+                 <option value="1">中午(12:00-13:30)</option> 
+                 <option value="2">下午(13:30-17:00)</option>     
+              </select>
+              <br>
+              <text>地址(路名):</text>
+              <input type="text" value="預設會員地址">
+          </form>
+      </div>
+
+      <div id="Body">
+          <div class="address" >
+              <h2>店到店</h2>
+              <text>店名:</text>
+              <input type="text">
+              <br>
+              <text>店號:</text>
+              <input type="text">
+              <br>
+              <text>收件人:</text>
+              <input type="text">
+          </div>
+      </div>
+  </div>
+  
+  </div>
+ 
+  
+
+  <div style='clear:both;'></div>
+  <div class="row ">
+      <div class="col-4 mx-auto">
+          <div type="button" id="submit" class="btn  w-100" >
+          <button>繼續購買</button>
+          <button>確認結帳</button>
+          
+      </div>
+  </div>
+
+  <!-- <div id="Footer">Footer 欄位</div> -->
+
+
+
+  
+
+
+
+   
+
+
+
+   <!-- bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+</body>
+</html>

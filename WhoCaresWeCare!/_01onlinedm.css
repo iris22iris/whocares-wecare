@@ -34,35 +34,78 @@
 }
 /* ------side-menu------- */
 .side-menu{
-    border-right: black dotted ;
+    /* border-right: #ccc dotted ; */
     border-width: 0.25rem;
 }
 .side-menu .button{
-    height: 5rem;
+    height: 4rem;
+    background-color: snow;
+    margin: 0px 30px;
+    border: 0.5px #ccc solid;
+    font-size: large;
 }
 
-/* ------mainborder------- */
-.mainborder{
-    border:black solid ;
+.button{
+    border: none;
 }
-/* ------.title------- */
+
+.sideBtn{
+    text-decoration: none;
+    color:saddlebrown;
+    border-radius: 10px;
+}
+
+.sideSpace{
+    height: 13%;
+}
+
+/* ------title------- */
 .title{
     color:  rgb(117,76,36);
   
 }
+
+
 /* ------dmcontainer------- */
 .dmcontainer{
     padding: 2rem;
 }
 
-/* ------dmsee------- */
-.dmsee{
-    display: flex;
-    justify-content: center;
-    border: rgb(20, 19, 19) solid;
+/* ------dmImage------- */
+.dmImage{
+   
+    /* border: rgb(20, 19, 19) solid; */
 
 }
 
+#image {
+    display: flex;
+    justify-content: center;
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: #000; */
+    overflow: hidden;
+  }
+
+#image img {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+#image[zoomed] img {
+    transform-origin: 0% 0%; /* Added */
+    transform: translate(calc(var(--x) * -100%), calc(var(--y) * -100%)) scale(3); /* Updated */
+  }
+
+#myimage{
+    width: 90%;
+}
+
+.downloadBtn{
+    border-radius: 20px;
+    padding: 3px;
+}
 
 /* --------footer------ */
 .footer{
