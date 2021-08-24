@@ -26,10 +26,32 @@
     /* background-image: url(../image/background5.jpg); */
     background-attachment: fixed;
 }
-
-
-
-
+/*shopcar*/
+.shop{
+    margin: 10px;
+    width:1600px;
+    height: 800px;
+    /* background-color: yellow; */
+}
+.A{
+    /* display: flex; */
+    float:left;
+    padding:20px;
+    width:50%;
+    height: 400px;
+    /* background-color: aquamarine; */
+}
+.B{
+    float:right;
+    padding:20px;
+    width:50%;
+    height: 400px;
+    /* background-color: pink; */
+}
+.box{
+    display: flex;
+    top: 40px;
+}
 
 
 
@@ -78,4 +100,3 @@
     font-family: mainfont-light;
     letter-spacing: 0.5px;
     }
-
