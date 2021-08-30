@@ -1,5 +1,4 @@
- /* --------全域設定------ */
- *{
+*{
     margin: 0 ;
     padding: 0;
     list-style: none;
@@ -20,225 +19,56 @@
     font-family: mainfont-regular;
     src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
 }
-
-#body{
-    /* background:white; */
-    /* background-image: url(../image/background4.jpg); */
-    background-image: url(../image/background5.jpg);
-    background-attachment: fixed;
+.orditemtitlecontent{
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(115,99,87);
 }
-
-/* ------- title ------- */
-.title{
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    font-size: 40px;
-    color: rgb(117,76,36);
-    letter-spacing: 0.7px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-
-
-/* ------- List ------- */
-.list{
-    border-left: 0.5px solid silver;
-    border-right: 0.5px solid silver;
-}
-
-/* ------- List-head 購買清單標題------- */
-
-#deleteIcon{
-    font-size: 20px;
-}
-
-.list-head{
-    background: rgb(117,76,36);
-    display: flex;
-    flex-wrap: wrap;
-    height: 50px;
-    color: white;
-    font-size: 18px;
-}
-
-
-/* ------- List-content 商品資料------- */
-div>img{
+.main{
+    /* margin: 0 auto; */
     width: 100%;
-}
-
-li>a{
-    text-decoration: none;
-    border-bottom: 2px dotted;
-    color: rgb(66, 58, 53);
-}
-
-.col {
-    /* border: 1px solid blue; */
+    /*height: 80vh;*/
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    flex-direction: column;
 }
 
-.col-2{    
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.list-item{
-    height: 150px;
-    border-bottom: 1px silver solid;
-    color: rgb(66, 58, 53);
-    font-size: 18px;
-    background-color: white;
-}
+    .orditemtitle{
 
-.productName{
-    display: flex;
-    flex-wrap: nowrap;
+        color: rgb(117,76,36);
+       
+        font-size: 40px;
+        size: 8px;
 }
-
-.productId{
-    font-size: small;
-}
-
-.productPrice{
-    display: flex;
-    justify-content: center;
-}
-.promoteTag{
-    font-size: small;
-    padding: 3px;
-    color: white;
-    background-color: orange;
-    
-}
-/* <!-- 沒有折扣的時候不用刪除線 --> */
-.total{
-    text-decoration:line-through;
-}
-
-.discountTotal{
-    color: rgb(163, 7, 38);
-}
-
-.recommandBtn{
-    color: white;
-    background-color: tomato;
-    padding: 5px 6px;
-    margin-top: 2px;
+/* 預約邊縣 */
+.con {
     border-radius: 15px;
-    border: 0px;
-    font-size: 14px;
+    border: black solid;
+    margin: 2em; 
 }
 
-dl{
-    margin-top: 1rem;
+/* 預約左右寬 */
+.container {
+    max-width: 80%;
 }
 
-button>a{
-    text-decoration: none;
-    color: rgb(66, 58, 53);;
-}
-
-
-
-/* ------- Count ------- */
-.count{
-    height: 30vh;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    background-color:tan
+/* 預約序號css */
+.square {
+    border-radius: 20px;
+    border: black solid;
+    height: 94%;
+    text-align: center;
+    line-height: 110px;
+    margin: 10px 10px 10px 10px;
 }
 
 
-/* -----bottom-left----- */
-.bottom-left{
-    /* background:tomato; */
-    width: 60%; 
+/* 中間文字css */
+.k {
+    padding-left: 100px;
+    line-height: 80px;
+    font-size: 25px;
 }
-div>h5{
-    margin-top: 10px;
+/* 兩個以上間隔距離 */
+.list{
+    margin-bottom:30px;
 }
-
-
-/* -----bottom-right----- */
-.bottom-right{
-    /* background:steelblue; */
-    width: 40%;
-}
-
-.count-row{
-    height: 25%;
-    /* background-color: red; */
-    /* border: 1px yellow solid; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 20px;
-}
-
-.count-header{
-   /* background:rgb(66, 58, 53); */
-   display: flex;
-   justify-content:flex-end;
-   font-size: 20px;
-}
-
-/* ----checkout btn---- */
-.col-12{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-}
-
-
-/* --------footer------ */
-.footer{
-    background:rgb(115,99,87);
-    width: 100%;
-    color:white;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#left-footer{
-    width: 50%;
-    
-}
-
-#right-footer{
-    width: 50%;
-    
-}
-
-.list-inline-item{
-    font-size: 30px;
-}
-
-.copyright{
-    color: white;
-    font-size: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-bottom: 10px;
-}
-
-.row dt{
-    font-family: mainfont-regular;
-    letter-spacing: 1.5px;
-}
-
-.row dd{
-    font-family: mainfont-light;
-    letter-spacing: 0.5px;
-    }

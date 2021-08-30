@@ -20,16 +20,17 @@
 	src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
 }
 
+#body {
+    /* background: rgb(250, 246, 243); */
+    background-image: url(../image/background7.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .html {
     height: 100%;
 }
 
-#body {
-    background: rgb(250, 246, 243);
-    /* background-image: url(../image/background.jpg); */
-    background-attachment: fixed;
-}
 
 .menuTwo {
     height: 80px;

@@ -3,178 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></linkrel>
-    <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="_06reservationQuery.css">
-
-    <title>租賃設備清單</title>
+      <!-- bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="index.css"></linkrel>
+        <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <title>租賃設備訂單紀錄</title>
+   
 </head>
 <body id="body">
-<!-- header start -->
-    <iframe src="index.html" frameborder="0"
-        width="100%"
-        height="100px"
-        scrolling= "no"
-    ></iframe>
-<!-- header end -->
-
-
-
-<!-- title start! -->
-<div class="title container">
-  <i class="fas fa-shopping-cart pe-2"></i>預約紀錄查詢
-</div>
-<!-- title end! -->
-
-
-
-<!-- List start! -->
-<div class="list container">
-    <div class="row list-head">
-        <div class="col">商品圖片</div>
-        <div class="col-2">商品名稱</div>
-        <div class="col">狀態</div>
-        <div class="col">預約日期</div>
-        <div class="col">是否可租賃</div>
-        <div class="col-2">自動取消日期</div>
-        <div class="col"><i class="far fa-trash-alt" id="deleteIcon"></i></div>
-    </div>
-    <div class="row list-item">
-        <div class="col">
-          <img src="../image/product/A0001.jpg" alt="">
-        </div>
-        <div class="col-2" class="productName">
-          <dl>
-            <li class="productId">A122222222</li>
-            <li> <a href="#商品網址">多功能型摺疊輪椅</a></li>
-<!-- 沒有符合活動或折扣的時候不會出現 -->
-            <!-- <lable class="promoteTag">滿千折百</lable> -->
-          </dl>
-        </div>
-        <div class="col">2之2預約</div>
-        <div class="col">2021-09-29</div>
-        <div class="col">   
-              <button  type="button" class="recommandBtn" href="#">
-              可租賃
-              </button>          
-        </div>
-        <div class="col-2">2021-10-10</div>
-        <div class="col">
-          <input type="checkbox" name="delete" id="delete">
-        </div>
-    </div>
-    <div class="row list-item">
-        <div class="col">
-          <img src="../image/product/A0001.jpg" alt="">
-        </div>
-        <div class="col-2" class="productName">
-          <dl>
-            <li class="productId">A122222222</li>
-            <li> <a href="#商品網址">多功能型摺疊輪椅</a></li>
-<!-- 沒有符合活動或折扣的時候不會出現 -->
-            <!-- <lable class="promoteTag">滿千折百</lable> -->
-          </dl>
-        </div>
-        <div class="col">2之3預約</div>
-        <div class="col">2021-09-29</div>
-        <div class="col">   
-              <button  type="button" class="recommandBtn" href="#">
-              等待中..
-              </button>          
-        </div>
-        <div class="col-2">等待可租賃..</div>
-        <div class="col">
-          <input type="checkbox" name="delete" id="delete">
-        </div>
-    </div>
-   
-</div>
-<!-- List end! -->
-<!-- count start! -->
-<div class="count container">
-    <!-- bottom-left -->
-  <div class="bottom-left">
-    <h5>預約注意事項：</h5>
-    <ul type="circle">
-      <li>8/8滿千折百，全館任意消費滿千折百</li>
-      <li>全館消費滿3000免運</li>
-      <li></li>
-    </ul>
-  </div>
-    <!-- bottom-right -->
-    <div class="bottom-right container">
-      <div class="row count-row">
-       
-      </div>
-      <div class="row count-row">
-     
-      </div>
-      <div class="row count-row">
-      
-      </div>
-      <div class="row">
-        <div class="col-12">
-         
-        </div></div>
-    </div>
-</div>
-<!-- count end! -->
-
-
-
-<!-- footer Start! -->
-  <div class="footer container-fluid">
-    <!-- left-footer -->
-    <div id="left-footer">
-      <dl class="row pt-4 pb-2 ps-4">
-        <dt class="col-sm-3 d-flex justify-content-end">
-          <i class="fas fa-map-marker-alt pe-1"></i>
-          公司地址:
-        </dt>
-        <dd class="col-sm-9">
-          台北市大安區忠孝東路三段1號
-        </dd>      
-        <dt class="col-sm-3 d-flex justify-content-end">
-          <i class="fas fa-phone pe-1"></i>
-          連絡電話:
-        </dt>
-        <dd class="col-sm-9">
-          (02) 2211-3344
-        </dd>       
-        <dt class="col-sm-3 d-flex justify-content-end">
-          <i class="far fa-smile pe-1"></i>
-          服務時段:
-        </dt>
-        <dd class="col-sm-9">
-          週一至週五(例假日除外) 9:00AM - 17:30PM
-        </dd>
-    </div>
-    <!-- right-footer -->
-    <div id="right-footer">
-      <ul class="list-inline pt-4 d-flex justify-content-start align-items-end">
-        <li class="list-inline-item px-4">
-          <i class="fab fa-facebook-square"></i>
-        </li>
-        <li class="list-inline-item px-4">
-          <i class="fab fa-instagram"></i>
-        </li>
-        <li class="list-inline-item px-4">
-          <i class="fab fa-line"></i>
-        </li>
-      </ul>
-      <div class="copyright">
-       &nbsp;&nbsp; All Content Copyright &copy; 2021
-      </div>
-    </div>
-  </div>
-<!-- footer End! -->
+   <!-- header start! -->
   
+   <iframe src="index.html" frameborder="0" width="100%" height="100px" scrolling="no"></iframe>
+  
+   <!-- header End! -->
 
- <!-- bootstrap -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+     <!-- form title start-->
+     <div class="orditemtitlecontent ">
+      <div class="orditemtitle p-3 d-flex justify-content-start align-items-center">
+        <li>
+            <i class="fas fa-th-large" aria-hidden="true"></i>租賃設備訂單紀錄
+        </li>
 
+    </div>
+      <!-- title end -->
+       <!-- 搜尋start -->
+    <hr>
+    <br>
+    <div class=" header-searchcontainer col-12 d-flex  ">
+                                
+      <div class="  col-12 p-3  d-flex align-items-center ">
+          <form class="row g-3 align-items-center">
+              <div class="col-4 ">
+              <label class="enter ">請輸入查詢編號:</label></div>
+              <div class="col-6">
+              <input type="search" class="form-control "   id="enter"></div>
+              <div class="col-2">
+              <button type="button" class="btn btn-primary ">搜尋</button></div>
+          </form>
+      </div>
+  </div>    
+</div>      
+</div>   
+</div>
+  <!-- 搜尋end -->
+
+ <!-- 預約欄位 start -->
+      <div class="col-md-12 container">
+          <div class="row list con">
+              <div class="col-md-3">
+                  <dl class="square">
+                      <li style="font-size: 25px;">預約序號</li>
+                      <li style="font-size: 70px;">可租</li>
+                  </dl>
+              </div>
+              <div class="col-md-5">
+                  <dl class="k">
+                      <li>訂單編號: 123456</li>
+                      <li>訂單日期: 2021/08/01 19:34:02</li>
+                      <li>商品編號: A00001</li>
+                      <li>商品名稱:<a href="">多功能摺疊輪椅</a> </li>
+                  </dl>
+              </div>
+              <div class="col-md-4 aa">
+                  <img src="../image/product/A0001.jpg" alt="">
+              </div>
+          </div>
+          <div class="row list con">
+            <div class="col-md-3">
+                <dl class="square">
+                    <li style="font-size: 25px;">預約序號</li>
+                    <li style="font-size: 70px;">02</li>
+                </dl>
+            </div>
+            <div class="col-md-5">
+                <dl class="k">
+                    <li>訂單編號: 123456</li>
+                    <li>訂單日期: 2021/08/01 19:34:02</li>
+                    <li>商品編號: A00001</li>
+                    <li>商品名稱:<a href="">多功能摺疊輪椅</a> </li>
+                </dl>
+            </div>
+            <div class="col-md-4 aa">
+                <img src="../image/product/A0001.jpg" alt="">
+            </div>
+        </div>
+
+</div>
+ <!-- 預約欄位 end -->
+ <!-- 返回start -->
+            <div class="col-12 p-3 d-flex justify-content-center align-items-center">
+              <button type="button">返回</button>
+  </div>
+ <!-- 返回end -->
+     <!-- footer Start! -->
+      
+     <div class="footer container-fluid">
+        <!-- left-footer -->
+        <div id="left-footer">
+          <dl class="row pt-4 pb-2 ps-4">
+            <dt class="col-sm-3 d-flex justify-content-end">
+              <i class="fas fa-map-marker-alt pe-1"></i>
+              公司地址:
+            </dt>
+            <dd class="col-sm-9">
+              台北市大安區忠孝東路三段1號
+            </dd>      
+            <dt class="col-sm-3 d-flex justify-content-end">
+              <i class="fas fa-phone pe-1"></i>
+              連絡電話:
+            </dt>
+            <dd class="col-sm-9">
+              (02) 2211-3344
+            </dd>       
+            <dt class="col-sm-3 d-flex justify-content-end">
+              <i class="far fa-smile pe-1"></i>
+              服務時段:
+            </dt>
+            <dd class="col-sm-9">
+              週一至週五(例假日除外) 9:00AM - 17:30PM
+            </dd>
+        </div>
+        <!-- right-footer -->
+        <div id="right-footer">
+          <ul class="list-inline pt-4 d-flex justify-content-start align-items-end">
+            <li class="list-inline-item px-4">
+              <i class="fab fa-facebook-square"></i>
+            </li>
+            <li class="list-inline-item px-4">
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li class="list-inline-item px-4">
+              <i class="fab fa-line"></i>
+            </li>
+          </ul>
+          <div class="copyright">
+           &nbsp;&nbsp; All Content Copyright &copy; 2021
+          </div>
+        </div>
+      </div>
+    
+    <!-- footer End! -->
+    <!-- bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
 </body>
 </html>
