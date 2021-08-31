@@ -63,7 +63,7 @@
 }
 
 
-/*---- 訂單區塊-上方----- */
+/*---- 訂單區塊 上方訂單----- */
 .topContainer{
     border-radius: 30px;
     border:saddlebrown dotted 3px ;
@@ -116,7 +116,7 @@
 
 
 
-/* ------ 下拉資訊----- */
+/* ------ 訂單區塊 下拉資訊----- */
 .bottomContainer{
     padding: 15px 30px;
 }
@@ -209,7 +209,7 @@
 
 
 
-
+/* --------進度條------- */
 .list li{  
     display: flex;
     flex-direction: column;
@@ -248,20 +248,14 @@
 .list li + li::before{
     content: '';
     position:absolute;
-    width: 100px;
+    width: 50px;
     height: 5px;
     background-color: #f39700;
-    z-index: -1;
     top: 0;
     bottom: 0;
-    left: -100px;
+    left: -50px;
     margin: auto;
 }
-
-
-/* --------評價視窗------- */
-
-
 
 
 

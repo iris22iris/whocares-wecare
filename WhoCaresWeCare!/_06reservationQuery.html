@@ -5,52 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="_06reservationQuery.css">
       <!-- bootstrap -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="index.css"></linkrel>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- icon -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      
-    <title>租賃設備訂單紀錄</title>
+    <title>預約序號查詢</title>
    
 </head>
-<body id="body">
+<body >
+  <!-- main start -->
+  <div id="body">
+
    <!-- header start! -->
-  
-   <iframe src="index.html" frameborder="0" width="100%" height="100px" scrolling="no"></iframe>
-  
+   <iframe src="index.html" frameborder="0" 
+    width="100%" height="100px" scrolling="no"></iframe>
    <!-- header End! -->
 
-     <!-- form title start-->
-     <div class="orditemtitlecontent ">
-      <div class="orditemtitle p-3 d-flex justify-content-start align-items-center">
+     <!-- title start-->
+      <div class="title container ">
+        <div class="reservationTitle pe-3">
         <li>
-            <i class="fas fa-th-large" aria-hidden="true"></i>租賃設備訂單紀錄
+            <i class="fas fa-th-large p-3" aria-hidden="true"></i>
+            預約紀錄查詢
         </li>
-
-    </div>
-      <!-- title end -->
+        </div>
+     
        <!-- 搜尋start -->
-    <hr>
-    <br>
-    <div class=" header-searchcontainer col-12 d-flex  ">
+        <div class=" header-searchcontainer col-12 d-flex  ">
                                 
-      <div class="  col-12 p-3  d-flex align-items-center ">
-          <form class="row g-3 align-items-center">
-              <div class="col-4 ">
-              <label class="enter ">請輸入查詢編號:</label></div>
-              <div class="col-6">
-              <input type="search" class="form-control "   id="enter"></div>
-              <div class="col-2">
-              <button type="button" class="btn btn-primary ">搜尋</button></div>
-          </form>
-      </div>
-  </div>    
-</div>      
-</div>   
-</div>
-  <!-- 搜尋end -->
+          <div class="  col-12 p-3  d-flex align-items-center ">
+              <form class="row g-3 align-items-center">
+                  <div class="col-4 ">
+                  <label class="enter ">請輸入查詢編號:</label></div>
+                  <div class="col-6">
+                  <input type="search" class="form-control "   id="enter"></div>
+                  <div class="col-2">
+                  <button type="button" class="btn btn-primary ">搜尋</button></div>
+              </form>
+          </div>
+        </div>    
+      </div>      
+      <!-- title end -->
 
- <!-- 預約欄位 start -->
-      <div class="col-md-12 container">
+      <!-- 預約欄位 start -->
+        <div class="col-md-12 container">
           <div class="row list con">
               <div class="col-md-3">
                   <dl class="square">
@@ -88,17 +86,22 @@
             <div class="col-md-4 aa">
                 <img src="../image/product/A0001.jpg" alt="">
             </div>
+          </div>
         </div>
+       <!-- 預約欄位 end -->
 
-</div>
- <!-- 預約欄位 end -->
- <!-- 返回start -->
-            <div class="col-12 p-3 d-flex justify-content-center align-items-center">
-              <button type="button">返回</button>
-  </div>
- <!-- 返回end -->
+    
+        <!-- btn start 返回-->
+         <div class=" button col-12 pb-3 d-flex justify-content-center align-items-center">
+             <button type="submit" class="btn btn-secondary">返回</button>
+         </div>
+        <!-- btn end 返回--> 
+
+    </div>
+    <!-- main end -->
+
+
      <!-- footer Start! -->
-      
      <div class="footer container-fluid">
         <!-- left-footer -->
         <div id="left-footer">
