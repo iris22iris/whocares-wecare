@@ -1,6 +1,5 @@
-
-/* --------全域設定------ */
-*{
+ /* --------全域設定------ */
+ *{
     margin: 0 ;
     padding: 0;
     list-style: none;
@@ -23,47 +22,31 @@
 }
 
 #body{
-    background-image: url(../image/background7.png);
-    background-size: cover;
-    background-attachment: fixed; 
-    min-height: 100%;
-    position: relative;
+    background: rgb(250, 246, 243);
+    /* background-image: url(../image/background5.jpg); */
+    background-attachment: fixed;
 }
-
-#content {
-	padding-bottom:144px;
-}
-
-html, body{
-    height: 100%;
-}
-
-
 /*shopcar*/
-/* .shop{
+.shop{
     margin: 10px;
     width:1600px;
     height: 800px;
-    /* background-color: yellow; 
-}*/
-
-.cartMain{
-    display: flex;
-    flex-wrap: wrap;
+    /* background-color: yellow; */
 }
-
 .A{
     /* display: flex; */
-    /* float:left; */
+    float:left;
     padding:20px;
     width:50%;
-
+    height: 400px;
+    /* background-color: aquamarine; */
 }
 .B{
-    /* float:right; */
+    float:right;
     padding:20px;
     width:50%;
-  
+    height: 400px;
+    /* background-color: pink; */
 }
 .box{
     display: flex;
@@ -83,8 +66,6 @@ html, body{
     color:white;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    bottom: 0;
 }
 
 #left-footer{
