@@ -1,11 +1,10 @@
-
- /* --------全域設定------ */
- *{
+/* --------全域設定------ */
+*{
     margin: 0 ;
     padding: 0;
     list-style: none;
     font-family: mainfont-medium;
-    
+       
 }
 
 /* 源泉圓體字型命名!! */
@@ -23,10 +22,20 @@
 }
 
 #body{
-    background-image: url(../image/background7_工作區域\ 1.png);
-    background-attachment: fixed;
+    background: rgb(250, 246, 243);
+    background-image: url(../image/background7.png);
     background-size: cover;
-    
+    background-attachment: fixed; 
+    min-height: 100%;
+    position: relative;
+}
+
+#content{
+    padding-bottom: 144px;
+}
+
+html, body{
+    height: 100%;
 }
 
 /* -------title------- */
@@ -266,6 +275,8 @@
     color:white;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
 }
 
 #left-footer{
