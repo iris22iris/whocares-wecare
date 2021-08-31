@@ -1,9 +1,10 @@
+/* --------全域設定------ */
 *{
     margin: 0 ;
     padding: 0;
     list-style: none;
     font-family: mainfont-medium;
-       
+    
 }
 
 /* 源泉圓體字型命名!! */
@@ -19,29 +20,88 @@
     font-family: mainfont-regular;
     src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
 }
-.orditemtitlecontent{
-    margin-left: 100px;
-    margin-right: 100px;
-    color: rgb(115,99,87);
-}
-.main{
-    /* margin: 0 auto; */
-    width: 100%;
-    /*height: 80vh;*/
-    display: flex;
-    flex-direction: column;
-}
-    .container{
-        border-radius: 30px;
-        border:black solid ;
-    
-        margin: 2em;
-        
-    }
-    .orditemtitle{
 
-        color: rgb(117,76,36);
-       
-        font-size: 40px;
-        size: 8px;
+#body{
+    background-image: url(../image/background7_工作區域\ 1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+/* ------titlt------- */
+.title{
+    color: rgb(115,99,87);
+    margin: 20px 100px;
+    font-size: 18px;
+}
+
+.recordTitle{
+    color: rgb(117,76,36);  
+    font-size: 40px;
+    size: 8px;
+}
+
+/* ---------Form--------- */
+.recordForm{
+    border-radius: 30px;
+    border: saddlebrown solid;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 1rem;
+    padding:20px;
+        
+ }
+
+.formRow label{
+    color: rgb(115,99,87);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.formRow{
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+
+
+/* --------footer------ */
+.footer{
+    background:rgb(115,99,87);
+    width: 100%;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left-footer{
+    width: 50%;
+    
+}
+
+#right-footer{
+    width: 50%;
+    
+}
+
+.row dt{
+    font-family: mainfont-regular;
+    letter-spacing: 1.5px;
+}
+
+.row dd{
+    font-family: mainfont-light;
+    letter-spacing: 0.5px;
+}
+
+.list-inline-item{
+    font-size: 30px;
+}
+
+.copyright{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
 }
