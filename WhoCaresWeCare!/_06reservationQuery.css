@@ -28,9 +28,12 @@
     
 }
 
+/* ------titlt------- */
 
 .title{
     color: rgb(115,99,87);
+    margin: 20px 100px;
+    font-size: 18px;
 }
 
 
@@ -40,40 +43,64 @@
     size: 8px;
 }
 
-/* 預約邊縣 */
-.con {
-    border-radius: 15px;
-    border: black solid;
-    margin: 2em; 
-}
 
-/* 預約左右寬 */
-.container {
-    max-width: 80%;
-}
-
-/* 預約序號css */
-.square {
-    border-radius: 20px;
-    border: black solid;
-    height: 94%;
-    text-align: center;
-    line-height: 110px;
-    margin: 10px 10px 10px 10px;
-}
-
-
-/* 中間文字css */
-.k {
-    padding-left: 100px;
-    line-height: 80px;
-    font-size: 25px;
-}
-/* 兩個以上間隔距離 */
+/*---- reservation list ----*/
 .list{
     margin-bottom:30px;
+    border-radius: 15px;
+    border: saddlebrown dotted 5px;
+    padding: 1em; 
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
+/* ----左邊預約序號----- */
+.reservationNum {
+    border-radius: 20px;
+    background-color: wheat;
+    height: 100%;
+    text-align: center;
+    line-height: 110px;
+}
+
+.numTitle{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgb(115,99,87);
+}
+
+.number{
+    color: white;
+    font-size: 80px;
+    letter-spacing: 6px;
+}
+
+/* 若可預約要去掉display:none */
+.link{
+    display:contents;
+    text-decoration: none;
+    color:rgb(146, 74, 11);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/* ----中間訂單資訊----- */
+.reservationInfo li{
+    padding-left: 20px;
+    line-height: 80px;
+    font-size: 25px;
+    color: rgb(115,99,87);
+}
+
+.infoLink{
+    text-decoration: none;
+    color: rgb(115,99,87);
+}
+
+/* ----右邊商品圖片---- */
+.img{
+    height: 360px;
+    width: 360px;
+}
 
 /* --------footer------ */
 .footer{
