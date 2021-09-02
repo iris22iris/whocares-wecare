@@ -1,0 +1,50 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    font-family: mainfont-medium;
+    
+}
+
+/* 源泉圓體字型命名!! */
+@font-face {
+    font-family: mainfont-medium;
+    src: url(../fonts/GenSenMaruGothicTW-Medium.ttf);
+}
+@font-face {
+    font-family: mainfont-light;
+    src: url(../fonts/GenSenMaruGothicTW-Light.ttf);
+}
+@font-face {
+    font-family: mainfont-regular;
+    src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
+}
+.main{
+    /* margin: 0 auto; */
+    width: 100%;
+    /*height: 80vh;*/
+    display: flex;
+    flex-direction: column; 
+}
+.containerPOPUP{
+
+    font-size:18px;
+}
+.modal-body{
+    font-size:25px;
+    background-image: url(../image/background.jpg);
+   
+}
+
+/* .modal-body1{
+    background-color: rgb(117,76,36);
+  
+} */
+
+.modal-title1{
+    
+   /* background-image: url(../image/background.jpg);*/
+   background-color: #ffa500;
+   color:saddlebrown dotted
+   
+}
