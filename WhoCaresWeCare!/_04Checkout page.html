@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="_04Checkout page.css">
      <title>Who Cares? We Care!</title>   
      <!-- bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="index.css"></linkrel>
      <!-- icon -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -118,10 +118,19 @@
   <!-- </div> -->
   
 
-  <div id="first">
+  <div id="first" >
       <!--商品結帳頁面-->
-          <h1>結帳專區</h1>
-  
+      <!-- <div class="newsAndProduct-Head">
+        <h1><i class="fas fa-th-large px-2"></i>結帳專區</h1>
+      </div> -->
+      <div class="changmtitle ">
+        <li>
+          <h1><i class="fas fa-th-large px-2 "   aria-hidden="true"></i>結帳專區</h1>
+         </li>
+        
+      </div>
+          <!-- <h1>結帳專區</h1> -->
+      <br>
       <!--商品清單-->
       <div class="table">
           <table width="1200" >
@@ -158,12 +167,23 @@
 
           </table>
           <br>
-          <h3><text>運送方式:</text>
+
+          <div class="box">
+            <div calss="b1">
+              <text>運送方式:</text>
               <select name="checktime" id="time">
                  <option value="0">店到店/1KG/70元</option> 
                  <option value="1">物流宅配/20KG/250元</option>      
-              </select></h3>
+              </select>
+            </div>
+            <div class="b2">
+              <p>請輸入折扣碼:<input type="text"></p>
+            </div>
+          </div>
           
+          
+          </div>
+
       <div class="item">
 
   </div>
@@ -179,7 +199,8 @@
       <div class="pay">
           <h2>付款方式:</h2>
           <select name="checkpay" id="card">
-              <option value="0">PAYPOL</option> 
+              <option value="0">信用卡</option> 
+              <option value="1">PAYPOL</option> 
               <option value="1">WebATM匯款</option>      
            </select>
       </div>
@@ -211,14 +232,21 @@
   <!--宅配資訊    -->
   <div class="info " >       
       <div class="user ">
-          <h2>宅配資訊</h2>
+        <div class="changmtitle ">
+          <li>
+            <h1><i class="fas fa-th-large px-2 "   aria-hidden="true"></i>宅配資訊</h1>
+           </li>
+          
+        </div>
+
+          <!-- <h2>宅配資訊</h2> -->
           <form>
               <text>收件人:</text>
               <input type="text" value="預設會員名字">
               <text>連絡電話:</text>
               <input type="tel" value="預設會員電話">
               <br>
-              <text>城市:</text>
+              <text>地址(城市):</text>
               <select name="city" id="city">
                  <option value="1">台北市</option> 
                  <option value="1">新北市</option> 
@@ -236,26 +264,32 @@
               <input type="text" value="預設會員地址">
           </form>
       </div>
-
+      
       <div id="Body">
           <div class="address" >
+            <div class="changmtitle ">
+              <li>
+                <h1><i class="fas fa-th-large px-2 "   aria-hidden="true"></i>店到店</h1>
+               </li>
+              
+            </div>
               <h2>店到店</h2>
               <text>店名:</text>
-              <input type="text">
               <br>
               <text>店號:</text>
-              <input type="text">
               <br>
               <text>收件人:</text>
-              <input type="text">
           </div>
       </div>
   </div>
-  
   </div>
  
+  <div style='clear:both;'></div>
+  <div class="form-check " >
+    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+    <label class="form-check-label" for="exampleCheck1">我已閱讀會員購買遵守則並同意</label>
+  </div>
   
-
   <div style='clear:both;'></div>
   <div class="row ">
       <div class="col-4 mx-auto">
@@ -267,15 +301,6 @@
   </div>
 
   <!-- <div id="Footer">Footer 欄位</div> -->
-
-
-
-  
-
-
-
-   
-
 
 
    <!-- bootstrap -->
