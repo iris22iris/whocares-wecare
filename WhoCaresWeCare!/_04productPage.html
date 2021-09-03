@@ -13,6 +13,8 @@
     <!-- css -->
     <link rel="stylesheet" href="_04productPage.css">
 
+    <link rel="stylesheet" href="_05loginPopup.css"> 
+
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -25,6 +27,8 @@
 
     <!-- 引入script -->
     <script src="_03reserve.js"></script>
+
+    
 
 </head>
 
@@ -158,7 +162,9 @@
                         <label for="fname">運送方式</label> :
                         <input type="checkbox" style="height: 15px;margin-right: -15px;">物流宅配<input type="checkbox" style="height: 15px;margin-right: -15px;">店到店<br><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-outline-secondary">直接購買</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button   type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            直接購買
+                        </button>
                         <button class="btn btn-outline-secondary">加入購物車</button>
                     </form>
                 </div>
@@ -166,7 +172,7 @@
 
             </div>
             <hr class="hr2">
-
+            <div id="content"></div>
             <!-- 商品詳情 start -->
             <div class="productDet">
                 <div>
@@ -300,5 +306,7 @@
 
 
 </body>
+<script src="_05loginPopup.js"></script>
+<script src="_05loginPopup3.js"></script>
 
 </html>
