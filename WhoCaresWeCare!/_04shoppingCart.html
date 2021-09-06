@@ -3,168 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></linkrel>
-    <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="_04shoppingCart.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
-
-    <title>購物車清單</title>
+    <title>搜尋結果{搜尋關鍵字}</title>
 </head>
 <body>
-    <!-- header start -->
-    <iframe src="index.html" frameborder="0"
-        width="100%"
-        height="100px"
-        scrolling= "no"
-    ></iframe>
-    <!-- header end -->
-  <!--shopcar-->
-  
-  <div class="shop" >
-    <div class="A">
-      <p class="text-start fs-3 " style="width: 8rem;">購物明細</p>
-      
-      <div class="box">
-      <div class="form-check " >
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1"></label>
-      </div>
-      
-      <div class="card mb-3" style="width: 560px;height: 200px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="\image\1.jpg" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            
-            <div class="card-body">
-              
-              <table >
-                <tr>
-                  <td><p class="card-title">商品編號</p></td>
-                  <td><p class="product-price">A10000012</p></td>
-                </tr>
-                <tr>
-                 <td><p class="card-start">多功能款收折手動輪椅</p></td> 
-                 <td><p class="text-end">900元</p></td>
-                </tr>
-                <tr>
-                  <td><p class="text-start">數量</p></td>
-                  <td><p class="text-start">1</p></td>
-                </tr>
-                <tr>
-                  <td><p class="text-start">折扣</p></td>
-                  <td><p class="text-end">-50元</p></td>
-                  
-                </tr>
-                <tr>
-                  
-                  <td><p class="text-start">總金額</p></td>
-                  <td><p class="text-end">850元</p></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- main start -->
+  <div id="body">
+    <div id="content">
 
-    </div>
-    <div class="B ">
-      <p class="text-start fs-3 " style="width: 8rem;">結帳清單</p>
-      <div class="card">
-        <table >
-          <!-- <tr width="200px">
-            <td><p class="text-start"></p></td> -->
-          </tr>
-                <tr>
-                    <td><p class="text-start">商品金額:</p></td> 
-                    <td><p class="text-start">6000元</p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="text-start">優惠折抵:</p></td> 
-                    <td><p class="text-start">-150元</p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="text-start">運送方式:店到店</p></td> 
-                    <td><p class="text-start">70元</p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="text-start">折扣碼</p></td>
-                    <td><p class="text"><input type="text"></br></p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="text-start">合計金額:</p></td> 
-                    <td><p class="text-start">5850元</p></td>
-                  </tr>
-        </table>
+     <!-- header start! -->
+     <iframe src="index.html" frameborder="0" 
+     width="100%" height="100px" scrolling="no"></iframe>
+     <!-- header End! -->
         
-      </div>
-      <div class="row ">
-        <div class="col-4 ">
-            <div type="button" id="submit" class="btn  w-100" >
-            <button>繼續購買</button>
-            <button>確認結帳</button>
-            
+     <!-- title Start -->
+     <div class="title container">
+         <h3>
+            <i class="fas fa-th-large pe-2"></i>
+            購物車清單
+        </h3>
+     </div>
+     <!-- title End -->
+
+     <!-- shoppingCart Start -->
+     <div class="cart container">
+         
+         <!--Left CartList Start -->
+         <div class="col-8 cartLeft">
+             <div class="cartTitle">
+                 <div class="col-2">
+                    <i class="far fa-trash-alt"></i>
+                 </div>
+                 <div class="col-10">購物明細</div>
+             </div>
+             <div class="cartList">
+                <div class="col-2">
+                    <input type="checkbox" id="deleteCart">
+                </div>
+                <div class="col-3">
+                    <img class="productImg" 
+                    src="../image/product/A0001.jpg" alt="A0001">
+                </div>
+                <div class="col-5 cartContent">
+                    <div></div>
+                    <div class="col-12 productId">A10001</div>
+                    <div class="col-12 productName">
+                        多功能款收折式手動輪椅
+                    </div>
+                    <div class="col-12" hidden="true">商品標籤</div>
+                    <div class="col-12">數量</div>
+                    <div class="col-12">折抵</div>
+                    <div class="col-12">總金額</div>
+                </div>
+                <div class="col-2 cartSum">
+                    <div></div>
+                    <div class="col-12 hidden"></div>
+                    <div class="col-12">
+                        1000元
+                    </div>
+                    <div class="col-12 hidden" hidden="true"></div>
+                    <div class="col-12 num">
+                        <i class="far fa-plus-square pe-2 mb-1"></i>
+                        1
+                        <i class="far fa-minus-square ps-2 mb-1"></i>
+                    </div>
+                    <div class="col-12">-50元</div>
+                    <div class="col-12">950元</div>
+                </div>
+             </div>
+             <div class="cartList">
+                <div class="col-2">
+                    <input type="checkbox" id="deleteCart">
+                </div>
+                <div class="col-3">
+                    <img class="productImg" 
+                    src="../image/product/A0001.jpg" alt="A0001">
+                </div>
+                <div class="col-5 cartContent">
+                    <div></div>
+                    <div class="col-12 productId">A10001</div>
+                    <div class="col-12 productName">
+                        多功能款收折式手動輪椅
+                    </div>
+                    <div class="col-12" hidden="true">商品標籤</div>
+                    <div class="col-12">數量</div>
+                    <div class="col-12">折抵</div>
+                    <div class="col-12">總金額</div>
+                </div>
+                <div class="col-2 cartSum">
+                    <div></div>
+                    <div class="col-12 hidden"></div>
+                    <div class="col-12">
+                        1000元
+                    </div>
+                    <div class="col-12 hidden" hidden="true"></div>
+                    <div class="col-12 num">
+                        <i class="far fa-plus-square pe-2 mb-1"></i>
+                        1
+                        <i class="far fa-minus-square ps-2 mb-1"></i>
+                    </div>
+                    <div class="col-12">-50元</div>
+                    <div class="col-12">950元</div>
+                </div>
+             </div>
+             <div class="cartList">
+                <div class="col-2">
+                    <input type="checkbox" id="deleteCart">
+                </div>
+                <div class="col-3">
+                    <img class="productImg" 
+                    src="../image/product/A0001.jpg" alt="A0001">
+                </div>
+                <div class="col-5 cartContent">
+                    <div></div>
+                    <div class="col-12 productId">A10001</div>
+                    <div class="col-12 productName">
+                        多功能款收折式手動輪椅
+                    </div>
+                    <div class="col-12" hidden="true">商品標籤</div>
+                    <div class="col-12">數量</div>
+                    <div class="col-12">折抵</div>
+                    <div class="col-12">總金額</div>
+                </div>
+                <div class="col-2 cartSum">
+                    <div></div>
+                    <div class="col-12 hidden"></div>
+                    <div class="col-12">
+                        1000元
+                    </div>
+                    <div class="col-12 hidden" hidden="true"></div>
+                    <div class="col-12 num">
+                        <i class="far fa-plus-square pe-2 mb-1"></i>
+                        1
+                        <i class="far fa-minus-square ps-2 mb-1"></i>
+                    </div>
+                    <div class="col-12">-50元</div>
+                    <div class="col-12">950元</div>
+                </div>
+             </div>
+             <div class="deleteBtn">
+                 <button type="submit">刪除</button>
+             </div>
+         </div>
+         <!--Left CartList End -->
+
+         <!--Right Count Start -->
+         <div class="col-3 cartRight">
+             <div class="amountTitle">結帳明細</div>
+             <div class="amount">
+                <div class="col-6 amountItem">商品金額：</div>
+                <div class="col-6 price">3000元</div>
+                <div class="col-6 amountItem">優惠折抵：</div>
+                <div class="col-6 price">-150元</div>
+                <div class="col-4 amountItem">折扣碼：</div>
+                <div class="col-8 price">
+                    <input type="text" placeholder="尚未輸入折扣代碼" id="discountCode">
+                </div>
+                <!-- enter submit以後從hidden改為顯示 -->
+                <div class="col-12 submitMsg" hidden="true">您輸入的折扣碼有誤/歡慶88節:折抵100元</div>
+                <div class="col-12"><hr style="size:5px;"></div>
+                
+                <div class="col-6 amountItem">合計金額：</div>
+                <div class="col-6 price">2850元</div>
+            </div>
+                <div class="checkoutBtn col-12 mt-3">
+                    <button >繼續逛逛</button>
+                    <button type="submit">結帳去</button>
+                </div>
+         </div>
+         <!--Right Count End -->
+
+     </div>
+     <!-- shoppingCart End -->
+
+
         </div>
-    </div>
-    </div>
-    </div>
-    
-  <div style="clear:both;"></div>
-
-<!-- footer Start! -->
-<div class="footer container-fluid">
-    <!-- left-footer -->
-    <div id="left-footer">
-      <dl class="row pt-4 pb-2 ps-4">
-        <dt class="col-sm-3 d-flex justify-content-end">
-          <i class="fas fa-map-marker-alt pe-1"></i>
-          公司地址:
-        </dt>
-        <dd class="col-sm-9">
-          台北市大安區忠孝東路三段1號
-        </dd>      
-        <dt class="col-sm-3 d-flex justify-content-end">
-          <i class="fas fa-phone pe-1"></i>
-          連絡電話:
-        </dt>
-        <dd class="col-sm-9">
-          (02) 2211-3344
-        </dd>       
-        <dt class="col-sm-3 d-flex justify-content-end">
-          <i class="far fa-smile pe-1"></i>
-          服務時段:
-        </dt>
-        <dd class="col-sm-9">
-          週一至週五(例假日除外) 9:00AM - 17:30PM
-        </dd>
-    </div>
-    <!-- right-footer -->
-    <div id="right-footer">
-      <ul class="list-inline pt-4 d-flex justify-content-start align-items-end">
-        <li class="list-inline-item px-4">
-          <i class="fab fa-facebook-square"></i>
-        </li>
-        <li class="list-inline-item px-4">
-          <i class="fab fa-instagram"></i>
-        </li>
-        <li class="list-inline-item px-4">
-          <i class="fab fa-line"></i>
-        </li>
-      </ul>
-      <div class="copyright">
-       &nbsp;&nbsp; All Content Copyright &copy; 2021
-      </div>
-    </div>
+     <!-- footer Start! -->
+     <div class="footer container-fluid">
+            <!-- left-footer -->
+            <div id="left-footer">
+            <dl class="row pt-4 pb-2 ps-4">
+                <dt class="col-sm-3 d-flex justify-content-end">
+                <i class="fas fa-map-marker-alt pe-1"></i>
+                公司地址:
+                </dt>
+                <dd class="col-sm-9">
+                台北市大安區忠孝東路三段1號
+                </dd>      
+                <dt class="col-sm-3 d-flex justify-content-end">
+                <i class="fas fa-phone pe-1"></i>
+                連絡電話:
+                </dt>
+                <dd class="col-sm-9">
+                (02) 2211-3344
+                </dd>       
+                <dt class="col-sm-3 d-flex justify-content-end">
+                <i class="far fa-smile pe-1"></i>
+                服務時段:
+                </dt>
+                <dd class="col-sm-9">
+                週一至週五(例假日除外) 9:00AM - 17:30PM
+                </dd>
+            </div>
+            <!-- right-footer -->
+            <div id="right-footer">
+            <ul class="list-inline pt-4 d-flex justify-content-start align-items-end">
+                <li class="list-inline-item px-4">
+                <i class="fab fa-facebook-square"></i>
+                </li>
+                <li class="list-inline-item px-4">
+                <i class="fab fa-instagram"></i>
+                </li>
+                <li class="list-inline-item px-4">
+                <i class="fab fa-line"></i>
+                </li>
+            </ul>
+            <div class="copyright">
+            &nbsp;&nbsp; All Content Copyright &copy; 2021
+            </div>
+            </div>
+     </div>
+     <!-- footer End! -->
   </div>
-<!-- footer End! -->
+  <!-- main end -->
 
- <!-- bootstrap -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

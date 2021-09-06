@@ -1,0 +1,131 @@
+
+/* --------全域設定------ */
+*{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    font-family: mainfont-medium;
+       
+}
+
+/* 源泉圓體字型命名!! */
+@font-face {
+    font-family: mainfont-medium;
+    src: url(../fonts/GenSenMaruGothicTW-Medium.ttf);
+}
+@font-face {
+    font-family: mainfont-light;
+    src: url(../fonts/GenSenMaruGothicTW-Light.ttf);
+}
+@font-face {
+    font-family: mainfont-regular;
+    src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
+}
+
+#body{
+    background: rgb(250, 246, 243);
+    background-image: url(../image/background7.png);
+    background-size: cover;
+    background-attachment: fixed; 
+    min-height: 100%;
+    position: relative;
+}
+
+#content{
+    padding-bottom: 144px;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.info{
+    display: inline-flex;
+    background: burlywood;
+    margin: 5px;
+}
+
+.address{
+    margin: 5px;
+}
+
+
+#final{
+    line-height:80px;
+    font-size:15px;
+    font-weight:bold;
+    background-color:pink;
+    display: inline-flex;
+}
+
+.order{
+    font-size: 20px;
+    width: 500px;
+    height:300px;
+    /* background-color: coral; */
+    margin: 20px;
+    border: 2px;
+}
+.pay{
+    font-size: 15px;
+    width: 400px;
+    height: 300px;
+    /* background-color: darkgreen; */
+    margin: 20px;
+    border: 2px;
+}
+.total{
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    /* background-color: burlywood; */
+    margin: 20px;
+    border: 2px;
+}
+
+
+
+/* --------footer------ */
+.footer{
+    background:rgb(115,99,87);
+    width: 100%;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+}
+
+#left-footer{
+    width: 50%;
+    
+}
+
+#right-footer{
+    width: 50%;
+    
+}
+
+.list-inline-item{
+    font-size: 30px;
+}
+
+.copyright{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.row dt{
+    font-family: mainfont-regular;
+    letter-spacing: 1.5px;
+}
+
+.row dd{
+    font-family: mainfont-light;
+    letter-spacing: 0.5px;
+    }
