@@ -1,0 +1,214 @@
+
+/* --------全域設定------ */
+*{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    font-family: mainfont-medium;
+       
+}
+
+/* 源泉圓體字型命名!! */
+@font-face {
+    font-family: mainfont-medium;
+    src: url(../fonts/GenSenMaruGothicTW-Medium.ttf);
+}
+@font-face {
+    font-family: mainfont-light;
+    src: url(../fonts/GenSenMaruGothicTW-Light.ttf);
+}
+@font-face {
+    font-family: mainfont-regular;
+    src: url(../fonts/GenSenMaruGothicTW-Regular.ttf);
+}
+
+#body{
+    background: rgb(250, 246, 243);
+    background-image: url(../image/background7.png);
+    background-size: cover;
+    background-attachment: fixed; 
+    min-height: 100%;
+    position: relative;
+}
+
+#content{
+    padding-bottom: 144px;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* ------title------- */
+.title{
+    color:  rgb(117,76,36);
+    padding: 30px;
+}
+
+/* ----shopping detail---- */
+.detail{
+    padding: 0px 120px;
+}
+
+.detailTitle{
+    border: none;
+}
+
+.detailTitle th{
+    background-color:sienna;
+    color: white;
+    text-align:center;
+    padding: 3px 0px;
+    letter-spacing: 3px;
+    font-family: mainfont-regular;
+}
+
+.detailList{
+    border: none;
+}
+
+.detailList td img{
+    width: 100px;
+    height: 100px;
+}
+
+.detailList td{
+    background-color: white;
+    color: rgb(65, 61, 61);
+    text-align:center;
+    padding: 10px 0px;
+}
+
+/* -----checkout info----- */
+#checkoutInfo{
+    display:flex;
+    padding: 0px 120px;
+}
+
+.checkoutTitle{
+    color:sienna;
+}
+
+#deliveryType{
+    border: none;
+    background-color: wheat;
+    color: rgb(65, 61, 61);
+    padding: 2px;
+    font-size: 20px;
+}
+
+.checkoutBottom{
+    padding-top: 20px;
+}
+
+#discountCode{
+    font-size: 20px;
+}
+
+/* -----Count----- */
+.count{
+    color: rgb(65, 61, 61);
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.price{
+    font-family: mainfont-light;
+    display: flex;
+    justify-content: end;
+}
+
+/* ----delivery---- */
+.addressTitle{
+    color:sienna;
+}
+
+.delivery{
+    display: inline-flex;
+    padding: 0px 120px;
+}
+
+.deliveryInfo{
+    font-size: 20px;
+    border: none;
+    font-family: mainfont-light;
+}
+
+.deliveryInfo p{
+    font-family: mainfont-light;
+}
+
+.memberName{
+    width: 180px;
+}
+
+.addressInput{
+    width: 450px;
+}
+
+.city{
+    margin-bottom: 15px;
+}
+
+.select{
+    border: none;
+    background-color: wheat;
+    color: sienna;
+}
+
+/* ----checkOutBtn---- */
+.final{
+    padding: 30px 0px;
+}
+.checkOutBtn button{
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    color:white;
+    background-color: orange;
+}
+
+
+/* --------footer------ */
+.footer{
+    background:rgb(115,99,87);
+    width: 100%;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+}
+
+#left-footer{
+    width: 50%;
+    
+}
+
+#right-footer{
+    width: 50%;
+    
+}
+
+.list-inline-item{
+    font-size: 30px;
+}
+
+.copyright{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.row dt{
+    font-family: mainfont-regular;
+    letter-spacing: 1.5px;
+}
+
+.row dd{
+    font-family: mainfont-light;
+    letter-spacing: 0.5px;
+    }
